@@ -24,21 +24,21 @@ $$ K\ll N $$
 
 在这之中，约束总是以**期望**的形式出现（比如上述的平均等待时间），可以用如下公式表示：
 
-$$<x>=\int_0^\infty P(x)x\ dx,$$
+$$\lt x\gt=\int_0^\infty P(x)x\ dx,$$
 
-如果可离散化的话 $<x>=\sum _{x=0}^\infty P(x)x.$ 
+如果可离散化的话 $\lt x\gt =\sum _{x=0}^\infty P(x)x.$ 
 
 对于类似的分布，如果需要讨论的话，还有：
 
-$$<x^2>=\int_0^\infty p(x)x^2\ dx,$$
+$$\lt x^2\gt=\int_0^\infty p(x)x^2\ dx,$$
 
-$$<f(x)=\int_0^\infty p(x)f(x)\ dx.$$
+$$\lt f(x)\gt=\int_0^\infty p(x)f(x)\ dx.$$
 
-那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $<x>_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
+那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
 
 下一步，可以称为 entropy maximization step，选择熵最大的分布。信息熵的公式如下：
 
-$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$
+$$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$$
 
 它的意义仅在于，除了已知的几个均值类的限制条件之外，保持对于整个系统的最大不确定性。可以看出这个方法得到的分布是相当主观的。
 
