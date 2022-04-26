@@ -49,7 +49,7 @@ $\epsilon_{start}$ 和 $\epsilon_{end}$ 分别代表一开始的和结束时的 
 
 ```python
 # explain how epsilon drops:
-import math
+import numpy as np
 import matplotlib.pyplot as plt
 
 epsilon = 0
@@ -61,11 +61,15 @@ epsilon_lst = []
 for sample_count in range(2000):
     epsilon = epsilon_end + \
         (epsilon_start - epsilon_end) * \
-        math.exp(-1. * sample_count / epsilon_decay)
+        np.exp(-1. * sample_count / epsilon_decay)
     epsilon_lst.append(epsilon)
 f = plt.figure(figsize=(8,3))
 plt.grid('on')
-plt.plot(range(2000), epsilon_lst)
+plt.plot(range(2000), epsilon_lst, label='epsilon')
+plt.scatter([0], [epsilon_start], label='epsilon_start', c='green')
+plt.plot(range(2000), [epsilon_end]*2000, dashes=[5,5], label='epsilon_end')
+plt.yticks(np.append((np.array(range(1,9,2))/10), ([0.95,0.01])))
+plt.legend()
 plt.savefig("epsilon_decay.svg")
 plt.show()
 ```
@@ -74,4 +78,4 @@ plt.show()
 
 ![]({{ site.url }}\assets\images\2022-04-23\epsilon_decay.svg)
 
-可以看到大约在第 1500 开始 $\epsilon$ 就已经接近 0 了。
+可以看到大约在第 1500 开始 $\epsilon$ 就已经接近 0.01 了。
