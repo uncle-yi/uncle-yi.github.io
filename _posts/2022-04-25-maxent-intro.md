@@ -74,7 +74,7 @@ $$\frac{\partial S}{\partial p_i}=-(log\ p_i+1).$$
 
 $$-log\ p_i-1=\lambda_1 i+\lambda_2.$$
 
-可以得到结果：$p_i=e^{-1-\lambda_1i-\lambda_2}$。设 $Z=e^{1+\lambda_2}$，则$p_i=\frac{e^{-\lambda_1i}}{Z}$。接下来为了求解 $p$，就需要得到对应的 $\lambda_1$ 和 $Z$。根据 $g_2=1$ 可得等式 (11)：
+可以得到结果：$p_i=e^{-1-\lambda_1i-\lambda_2}$。设 $Z=e^{1+\lambda_2}$，则 $p_i=\frac{e^{-\lambda_1i}}{Z}$。接下来为了求解 $p$，就需要得到对应的 $\lambda_1$ 和 $Z$。根据 $g_2=1$ 可得等式 (11)：
 
 $$Z=\sum_{i=0}^{\infty}e^{-\lambda_1i}.$$
 
