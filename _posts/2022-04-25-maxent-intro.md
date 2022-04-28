@@ -54,23 +54,18 @@ $$\frac{\partial f}{\partial \vec x}=\sum_{i=1}^N \lambda_i \frac{\partial g_i}{
 
 $$\frac{\partial S}{\partial p_i}=\lambda_1 \frac{\partial g_1}{\partial p_i}+\lambda_2 \frac{\partial g_2}{\partial p_i}.$$
 
-其中：$\left\{
-    \begin{array}{**lr**}
-    g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\
-    g_2(\vec p)=\sum_{i=0}^\infty p_i=1.
-	\end{array}
-\right.$根据信息熵公式：
+其中：$\left\{\begin{array}{**lr**}g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\g_2(\vec p)=\sum_{i=0}^\infty p_i=1.\end{array}\right.$根据信息熵公式：
 
 $$S=-\sum_{i=0}^\infty p_ilog\ p_i,$$
 
 $$\frac{\partial S}{\partial p_i}=-(log\ p_i+1).$$
 
-求导很容易得到：$\left\{
+求导很容易得到：$$\left\{
     \begin{array}{**lr**}
     \frac{\partial g_{1}}{\partial p_{i}}=i, &\\
     \frac{\partial g_{2}}{\partial p_{i}}=1.
 	\end{array}
-\right.$则将等式 (7) 代入等式 (9) 可得等式 (10)：
+\right.$$则将等式 (7) 代入等式 (9) 可得等式 (10)：
 
 $$-log\ p_i-1=\lambda_1 i+\lambda_2.$$
 
