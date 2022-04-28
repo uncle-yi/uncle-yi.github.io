@@ -54,7 +54,12 @@ $$\frac{\partial f}{\partial \vec x}=\sum_{i=1}^N \lambda_i \frac{\partial g_i}{
 
 $$\frac{\partial S}{\partial p_i}=\lambda_1 \frac{\partial g_1}{\partial p_i}+\lambda_2 \frac{\partial g_2}{\partial p_i}.$$
 
-其中：$\left\{\begin{array}{**lr**}g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\g_2(\vec p)=\sum_{i=0}^\infty p_i=1.\end{array}\right.$根据信息熵公式：
+其中：$$\left\{
+	\begin{array}{**lr**}
+	g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\
+	g_2(\vec p)=\sum_{i=0}^\infty p_i=1.
+	\end{array}
+\right.$$根据信息熵公式：
 
 $$S=-\sum_{i=0}^\infty p_ilog\ p_i,$$
 
