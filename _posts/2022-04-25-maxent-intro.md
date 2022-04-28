@@ -78,7 +78,7 @@ $$-log\ p_i-1=\lambda_1 i+\lambda_2.$$
 
 $$Z=\sum_{i=0}^{\infty}e^{-\lambda_1i}.$$
 
-则现在只要知道 $\lambda_1$ 就可以求出 $p_i$ ，再根据 $g_1= 4$ 可得等式(12)：
+则现在只要知道 $\lambda_1$ 就可以求出 $p_i$ ，再根据 $g_1= 4$ 可得等式 (12)：
 
 $$\frac{1}{Z}\sum_{i=0}^\infty ie^{-\lambda_1i}=4.$$
 
