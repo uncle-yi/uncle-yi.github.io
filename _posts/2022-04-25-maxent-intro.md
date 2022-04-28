@@ -1,8 +1,3 @@
----
-title: 最大熵模型概述
-tags: 笔记 数学
----
-
 ## 前言
 
 最大熵方法的主要作用场景在于通过仅有的一部分数据 K 来预测远远大于它的实际可能数据量 N。
@@ -24,21 +19,21 @@ $$ K\ll N $$
 
 在这之中，约束总是以**期望**的形式出现（比如上述的平均等待时间），可以用如下公式表示：
 
-$$\lt x\gt=\int_0^\infty P(x)x\ dx,$$
+$$<x>=\int_0^\infty P(x)x\ dx,$$
 
-如果可离散化的话 $\lt x\gt =\sum _{x=0}^\infty P(x)x.$ 
+如果可离散化的话 $<x>=\sum _{x=0}^\infty P(x)x.$ 
 
 对于类似的分布，如果需要讨论的话，还有：
 
-$$\lt x^2\gt=\int_0^\infty p(x)x^2\ dx,$$
+$$<x^2>=\int_0^\infty p(x)x^2\ dx,$$
 
-$$\lt f(x)\gt=\int_0^\infty p(x)f(x)\ dx.$$
+$$<f(x)=\int_0^\infty p(x)f(x)\ dx.$$
 
-那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
+那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $<x>_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
 
 下一步，可以称为 entropy maximization step，选择熵最大的分布。信息熵的公式如下：
 
-$$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$$
+$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$
 
 它的意义仅在于，除了已知的几个均值类的限制条件之外，保持对于整个系统的最大不确定性。可以看出这个方法得到的分布是相当主观的。
 
@@ -46,9 +41,39 @@ $$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$$
 
 这里我所引用的 YouTube 视频使用了一种类似梯度下降法迭代求极值的方法演示了一遍如何求最大熵。那么对于普遍的情况，计算最值的指导公式为：
 
-$$\frac{\partial f}{\partial \vec x}=\lambda \frac{\partial \vec x}{\partial \vec x}.$$
+$$\frac{\partial f}{\partial \vec x}=\sum_{i=1}^N \lambda_i \frac{\partial g_i}{\partial \vec x}.$$
 
 其中 $\lambda$ 被称为拉格朗日乘数（Lagrange multiplier）。
+
+回到之前的出租车等待时间的例子，那么假设现在有两个限制条件（4 min 以及 100%），设 S 为 分布 p 的信息熵，$g_i$ 为 $p$ 的第 $i$ 个限制条件，那么这个公式可以写为：
+
+$$\frac{\partial S}{\partial p_i}=\lambda_1 \frac{\partial g_1}{\partial p_i}+\lambda_2 \frac{\partial g_2}{\partial p_i}.$$
+
+其中：
+$$
+\left\{
+    \begin{array}{**lr**}
+    g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\
+    g_2(\vec p)=\sum_{i=0}^\infty p_i=1.
+	\end{array}
+\right.
+$$
+根据信息熵公式：
+
+$$S=-\sum_{i=0}^\infty p_ilog\ p_i,$$
+
+$$\frac{\partial S}{\partial p_i}=-(log\ p_i+1).$$
+
+求导很容易得到：
+$$
+\left\{
+    \begin{array}{**lr**}
+    \frac{\partial g_1}{\partial p_i}=i, &\\
+    \frac{\partial g_2}{\partial p_i}=1.
+	\end{array}
+\right.
+$$
+则根据公式 ()
 
 ## 引用
 
