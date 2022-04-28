@@ -1,6 +1,6 @@
 ---
 title: 最大熵模型概述——纽约出租车问题
-tags: 数学
+tags: 数学 笔记
 ---
 
 ## 前言
@@ -34,11 +34,11 @@ $$\lt x^2\gt=\int_0^\infty p(x)x^2\ dx,$$
 
 $$\lt f(x)\gt=\int_0^\infty p(x)f(x)\ dx.$$
 
-那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt>_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
+那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
 
 下一步，可以称为 entropy maximization step，选择熵最大的分布。信息熵的公式如下：
 
-$$H(p)=-\sum_0^\infty P_{ME}(x)\ logP_{ME}(x).$$
+$$H(p)=-\sum_0^\infty P_{ME}(x)\ log\ P_{ME}(x).$$
 
 它的意义仅在于，除了已知的几个均值类的限制条件之外，保持对于整个系统的最大不确定性。可以看出这个方法得到的分布是相当主观的。
 
@@ -82,7 +82,7 @@ $$Z=\sum_{i=0}^{\infty}e^{-\lambda_1i}.$$
 
 $$\frac{1}{Z}\sum_{i=0}^\infty ie^{-\lambda_1i}=4.$$
 
-那么这里我引用的 YouTube 视频略微有一些问题，因为他对等式 (11) 使用了几何级数的求和公式（$i\rightarrow \infty$）（要注意这里的 $i$ 指代的是无穷的概率分布 $p_i$ 的 $i$，而不是限制个数 $i$ 的 $i$），又对求和公式求极限，得到等式 $Z=\frac{1}{1-e^{-\lambda_1}}$。之所以有一些问题，是因为这里默认了 $\lambda_1\gt0$，所以这里要么有一些不严谨，要么有额外的原因能确保它确实大于 0。
+那么这里我引用的 YouTube 视频略微有一些问题，因为他对等式 (11) 使用了几何级数的求和公式（$i\rightarrow \infty$）（要注意这里的 $i$ 指代的是无穷的概率分布 $p_i$ 的 $i$，而不是限制个数的 $i$），又对求和公式求极限，得到等式 $Z=\frac{1}{1-e^{-\lambda_1}}$。之所以有一些问题，是因为这里默认了 $\lambda_1\gt0$，所以这里要么有一些不严谨，要么有额外的原因能确保它确实大于 0。
 
 对于等式 (11) 可以用几何级数公式求解，但是等式 (12) 成分比较复杂，但是这里若对 (11) 两侧求偏导数，可得 $\frac{\partial Z}{\partial \lambda_1}=-\sum_{i=0}^\infty ie^{-\lambda_1i}$ ，则 (12) 可改写为：
 
@@ -96,15 +96,15 @@ $$\frac{\partial Z}{\partial \lambda_1}=\frac{e^{-\lambda_1}}{(1-e^{-\lambda_1})
 
 $$-\frac{1}{Z}\frac{\partial Z}{\partial \lambda_1}=\frac{e^{-\lambda_1}}{(1-e^{-\lambda_1})}=4.$$
 
-接下来只要计算等式 (15)，即可得 $\lambda_1$。这里我使用了 Numpy 的 log 函数求解得 $\lambda_1=0.22314355131420976$。代入 $p(x)=\frac{e^{-\lambda_1x}}{Z}$ ，$p(x) = \frac{(0.8)^x}{5}$。
+接下来只要计算等式 (15)，即可得 $\lambda_1$。这里我使用了 Numpy 的 log 函数求解得 $\lambda_1=0.22314355131420976$。代入 $p(x)=\frac{e^{-\lambda_1x}}{Z}$ ，最终结果为：$p(x) = \frac{(0.8)^x}{5}$。
 
-最后的结果如下所示：
+求出的分布如下所示：
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
-p = 0.8**np.arange(0,60)/5
+p = 0.8 ** np.arange(0,60)/5
 
 f = plt.figure(figsize=(8,4))
 plt.grid('on')
