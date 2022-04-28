@@ -96,7 +96,7 @@ $$\frac{\partial Z}{\partial \lambda_1}=\frac{e^{-\lambda_1}}{(1-e^{-\lambda_1})
 
 $$-\frac{1}{Z}\frac{\partial Z}{\partial \lambda_1}=\frac{e^{-\lambda_1}}{(1-e^{-\lambda_1})}=4.$$
 
-接下来只要计算等式 (15)，即可得 $\lambda_1$。这里我使用了 Numpy 的 log 函数求解得 $\lambda_1=0.22314355131420976$。代入 $p(x)=\frac{e^{-\lambda_1x}}{Z}$ ，最终结果为：$p(x) = \frac{(0.8)^x}{5}$。
+接下来只要计算等式 (15)，即可得 $\lambda_1$。这里我使用了 Numpy 的 log 函数求解得 $\lambda_1=0.22314355131420976$，实际上这里直接使用 $e^{-\lambda_1}=0.8$ 即可，它是一个有理数的分析解。代入 $p(x)=\frac{e^{-\lambda_1x}}{Z}$ ，最终结果为：$p(x) = \frac{(0.8)^x}{5}$。
 
 求出的分布如下所示：
 
