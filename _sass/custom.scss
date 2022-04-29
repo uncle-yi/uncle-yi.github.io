@@ -1,7 +1,8 @@
 /* start custom scss snippet */
 @font-face {
   font-family: sarasa;
-  src: url('../fonts/Sarasa-Gothic-SC-Light-02.woff') format('woff');
+  src: url('../fonts/Sarasa-Gothic-SC-Regular-02.woff') format('woff'),
+       url('../fonts/Sarasa-Gothic-SC-Regular-02.ttf')  format('truetype');
 }
 
 body{
