@@ -1,4 +1,13 @@
 /* start custom scss snippet */
+@font-face {
+  font-family: wqy;
+  src: url(../assets/ttc/wqy-microhei.ttc);
+}
+
+body{
+  font-family: wqy,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
 .page__content{
     padding-bottom: 40px;
 }
