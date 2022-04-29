@@ -104,11 +104,11 @@ $$-\frac{1}{Z}\frac{\partial Z}{\partial \lambda_1}=\frac{e^{-\lambda_1}}{(1-e^{
 import numpy as np
 import matplotlib.pyplot as plt
 
-p = 0.8**np.arange(0,60)/5
+p = 0.8 ** np.arange(0, 60) / 5
 
-f = plt.figure(figsize=(8,4))
+f = plt.figure(figsize=(8, 4))
 plt.grid('on')
-plt.plot(range(60),p)
+plt.plot(range(60), p)
 plt.xlabel("等待时间（min）") # 已导入中文字体，请自行操作。
 plt.ylabel("概率")
 plt.savefig("taxi_q.svg")

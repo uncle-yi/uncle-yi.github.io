@@ -63,13 +63,13 @@ for sample_count in range(2000):
         (epsilon_start - epsilon_end) * \
         np.exp(-1. * sample_count / epsilon_decay)
     epsilon_lst.append(epsilon)
-f = plt.figure(figsize=(8,4))
+f = plt.figure(figsize=(8, 4))
 plt.grid('on')
 plt.xlabel("回合次数") # 已导入中文字体，请自行操作。
 plt.plot(range(2000), epsilon_lst, label='epsilon')
 plt.scatter([0], [epsilon_start], label='epsilon_start', c='green')
-plt.plot(range(2000), [epsilon_end]*2000, dashes=[5,5], label='epsilon_end')
-plt.yticks(np.append((np.array(range(1,9,2))/10), ([0.95,0.01])))
+plt.plot(range(2000), [epsilon_end] * 2000, dashes=[5, 5], label='epsilon_end')
+plt.yticks(np.append((np.array(range(1, 9, 2)) / 10), ([0.95, 0.01])))
 plt.legend()
 plt.savefig("epsilon_decay.svg")
 plt.show()

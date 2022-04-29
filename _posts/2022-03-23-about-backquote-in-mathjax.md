@@ -13,7 +13,7 @@ tags: 记录
 			displayMath: [['$$', '$$']]
 		}, 
 		asciimath2jax: {
-			delimiters: [['$','$']]
+			delimiters: [['$', '$']]
 		}
 	};
 	{%- if _mathjax_autoNumber == true -%}
