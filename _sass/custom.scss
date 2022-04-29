@@ -1,12 +1,11 @@
 /* start custom scss snippet */
 @font-face {
-  font-family: wqy;
-  src: url('../fonts/WenQuanYiMicroHei.woff') format('woff'),
-  url('fonts/WenQuanYiMicroHei.woff') format('woff');
+  font-family: sarasa;
+  src: url('../fonts/Sarasa-Gothic-SC-Light-02.woff') format('woff');
 }
 
 body{
-  font-family: wqy,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-family: sarasa,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 
 .page__content{
