@@ -45,7 +45,7 @@ class Qlearning(object):
 
 $$\epsilon = \epsilon_{end}+(\epsilon_{start}-\epsilon_{end}) e^{-(n/decay)}$$
 
-$\epsilon_{start}$ 和 $\epsilon_{end}$ 分别代表一开始的和结束时的 $\epsilon$ ，n 代表回合数，decay则是衰减率。可以看出来在其他参数是常数的情况下 $\epsilon$ 是关于 n 的单调递减函数。关于它的递减速度，我写的可视化脚本如下：
+$\epsilon_{start}$ 和 $\epsilon_{end}$ 分别代表一开始的和结束时的 $\epsilon$ ，n 代表回合数，decay 则是衰减率。可以看出来在其他参数是常数的情况下 $\epsilon$ 是关于 n 的单调递减函数。关于它的递减速度，我写的可视化脚本如下：
 
 ```python
 # explain how epsilon drops:
