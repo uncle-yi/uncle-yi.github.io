@@ -3,6 +3,8 @@ title: 论文笔记：Can AI predicts animal movements?
 tags: 论文 强化学习 笔记
 ---
 
+> 原文：Can AI predict animal movements? filling gaps in animal trajectories using inverse reinforcement learning
+
 ## 摘要
 
 使用逆强化学习（Inverse Reinforce Leaning aka. IRL）框架，作者开发了一种新的间隙填充方法来预测动物最有可能行进的路线；再此框架内，算法从动物轨迹中学习奖励函数，以找到动物偏好的环境特征。作者将这种方法应用到了从「白额鸌」[bái é hù]（Streaked Shearwater）获得的 GPS 轨迹之上（下按语言习惯称为剪嘴鸥），并以此作为 IRL 相对于以往使用的插值方法更优秀的证据。其提出的优点如下：
