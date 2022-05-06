@@ -106,7 +106,7 @@ $$E_{p_{\pi}(\zeta'|\theta)}[\sum_t f(s_t)]=\frac{1}{\left|Z\right|}\sum_{\zeta 
 
 在前向传播中，$D$ 的传播公式为：
 
-$$D_\zeta^{k+1}(s)=\sum_{s',a}D_\zeta^k(s')\pi(a\|s;\theta)p(s'\|s,a).$$
+$$D_\zeta^{k+1}(s)=\sum_{s',a}D_\zeta^k(s')\pi(a|s;\theta)p(s'|s,a).$$
 
 收敛后，$D_\zeta(s)$ 的值是整个迭代的过程值的总和：$D_\zeta(s)=\sum_kD_\zeta^k(s).$ 通过不断地迭代 $D$，再更新 $\theta$ 就可以得到最优的 $\hat \theta$。
 
