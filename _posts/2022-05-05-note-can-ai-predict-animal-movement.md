@@ -59,9 +59,9 @@ $$R(\zeta;\theta)=\sum_tr(s_t;\theta)=\sum_t\theta^Tf(s_t).$$
 
 1. 用于指示陆地和海洋的二进制图；
 2. 与海洋、陆地和海岸线的指数距离图；
-3. 常量图（空白）。
+3. constant 常量图（空白）。
 
-![]({{ site.url }}\assets\images\2022-05-05\feature maps.jpg)
+![]({{ site.url }}\assets\images\2022-05-05\feature_map.svg)
 
 对于随机给定的策略 $\pi(a\|s;\theta)$，累积奖励的期望可以表示为：
 
@@ -84,7 +84,7 @@ $$p_{\pi}(\zeta|\theta)=\frac{exp(\sum_t \theta^Tf(s_t))}{Z(\theta)}=\frac{exp(\
 
 而参数 $\theta$ 是最大化对数似然来估计的（$\hat\theta$ 代表最优的 $\theta$）：
 
-$$\hat \theta=argmax_\theta L(\theta)=argmax_{\theta}\frac{1}{\abs{Z}}\sum_{\zeta \in Z}log\ p_{\pi}(\zeta|\theta).$$
+$$\hat \theta=argmax_\theta L(\theta)=argmax_{\theta}\frac{1}{\left|Z\right|}\sum_{\zeta \in Z}log\ p_{\pi}(\zeta|\theta).$$
 
 具体的方法是通过指数梯度法迭代求 $\theta$：
 
