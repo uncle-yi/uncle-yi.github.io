@@ -92,9 +92,35 @@ $$\theta=\theta e^{\lambda \nabla L(\theta)}.$$
 
 其中，
 
-$$\nabla L(\theta)=\overline f-E_{p_{\pi}(\zeta'|\theta)}[\sum_t f(s_t')].$$
+$$\nabla L(\theta)=\frac{1}{\left|Z\right|}\sum_{\zeta \in Z}log\ p_{\pi}(\zeta|\theta)=\overline f-E_{p_{\pi}(\zeta'|\theta)}[\sum_t f(s_t')].$$
 
 （推导过程见原论文）
+
+其中，式 (11) 的第二个项是特征向量在 $\pi$ 策略下的期望，此时 $\theta$ 是常量，则期望仅仅是 $\zeta$ 的期望，则其可以写成：
+
+$$E_{p_{\pi}(\zeta'|\theta)}[\sum_t f(s_t)]=\frac{1}{\left|Z\right|}\sum_{\zeta \in Z}\sum_tf(s_t)D_\zeta(s_t).$$
+
+> *$D_\zeta(s_t)$ is an expected state visitation count that expresses the probability of being in a certain state $s_t$ of trajectory $\zeta$ and is efﬁciently computed by backward and forward passes (Ziebart et al. 2008, Kitani et al. 2012)*. ——原文
+
+这里 $D$ 函数是一个统计状态访问次数的函数，通过前向传播和反向传播直至收敛，即可得到最优的 $\pi(a\|s;\theta)$ 。
+
+在前向传播中，$D$ 的传播公式为：
+
+$$D_\zeta^{k+1}(s)=\sum_{s',a}D_\zeta^k(s')\pi(a\|s;\theta)p(s'\|s,a).$$
+
+收敛后，$D_\zeta(s)$ 的值是整个迭代的过程值的总和：$D_\zeta(s)=\sum_kD_\zeta^k(s).$ 通过不断地迭代 $D$，再更新 $\theta$ 就可以得到最优的 $\hat \theta$。
+
+## 填补的完整过程
+
+给定一个缺失的部分，首先设置这个轨迹的始点和终点为 $s_0$ 和 $s_g$。然后再通过反向传播得到的 $\hat \theta$ 估计最优策略 $\pi(a\|s;\theta)$。反向传播通过 $s_g$ 计算 $Q(s,a)$ 和 $V(s)$。然后再用 $Q$ 和 $V$ 计算随机策略 $\pi(a\|s;\theta)$。我们对于填补的轨迹的目标，是每次选择 $argmax_a\pi(a\|s;\theta)$ 的状态 $s'$。从 $s_0$ 到 $s_g$ 都保持这个策略来选择动作。要注意的是通过特定策略生成的轨迹在$s_0$ 和 $s_g$ 相同的情况下应该是完全一样的；但是，可以通过估计的策略来进行概率插值（probabilistically interpolate trajectories）。
+
+  ## 评估模型
+
+为了评估 IRL 方法，本文使用了留出法（Holdout method）保留了一部分雄性雌性数据。正如前文所讲，使用了 80% 的数据估计权重向量，剩下的用于评估模型。具体的评估方法是，在测试轨迹的前半部分和后半部分随机选择两个点。选择的点被设置为轨迹缺失部分的开始和结束。为了确认这个插值方法对大缺失部分的效果，仅使用了沿整个轨迹至少缺失 50% 的样本。
+
+对于定量评估，本文将 IRL 的插值方法和生态学中非常普遍且广泛使用的线性插值方法进行了比较。具体使用的方法是镜柜改进的 Hausdorff 距离 (MHD; Dubuisson and Jain 1994)。这个方法后期会更新博文，暂略。
+
+评估的结果简要来说就是远远胜于已有的方法，详见原文。
 
 ## 引用
 
