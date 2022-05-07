@@ -38,7 +38,7 @@ $$\lt f(x)\gt=\int_0^\infty p(x)f(x)\ dx.$$
 
 下一步，可以称为 entropy maximization step，选择熵最大的分布。信息熵的公式如下：
 
-$$H(p)=-\sum_0^\infty P_{ME}(x)\ log\ P_{ME}(x).$$
+$$H(p)=-\sum_0^\infty P_{ME}(x)\log P_{ME}(x).$$
 
 它的意义仅在于，除了已知的几个均值类的限制条件之外，保持对于整个系统的最大不确定性。可以看出这个方法得到的分布是相当主观的。
 
@@ -61,9 +61,9 @@ $$\frac{\partial S}{\partial p_i}=\lambda_1 \frac{\partial g_1}{\partial p_i}+\l
 	\end{array}
 \right.$$根据信息熵公式：
 
-$$S=-\sum_{i=0}^\infty p_ilog\ p_i,$$
+$$S=-\sum_{i=0}^\infty p_i\log p_i,$$
 
-$$\frac{\partial S}{\partial p_i}=-(log\ p_i+1).$$
+$$\frac{\partial S}{\partial p_i}=-(\log p_i+1).$$
 
 求导很容易得到：$$\left\{
     \begin{array}{**lr**}
@@ -72,7 +72,7 @@ $$\frac{\partial S}{\partial p_i}=-(log\ p_i+1).$$
 	\end{array}
 \right.$$则将等式 (7) 代入等式 (9) 可得等式 (10)：
 
-$$-log\ p_i-1=\lambda_1 i+\lambda_2.$$
+$$-\log p_i-1=\lambda_1 i+\lambda_2.$$
 
 可以得到结果：$p_i=e^{-1-\lambda_1i-\lambda_2}$。设 $Z=e^{1+\lambda_2}$，则 $p_i=\frac{e^{-\lambda_1i}}{Z}$。接下来为了求解 $p$，就需要得到对应的 $\lambda_1$ 和 $Z$。根据 $g_2=1$ 可得等式 (11)：
 
