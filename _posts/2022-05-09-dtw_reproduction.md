@@ -10,7 +10,7 @@ tags: 实现 记录
 > - Every index from the first sequence must be matched with one or more indices from the other sequence, and vice versa
 > - The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
 > - The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
-> - The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if $j > i$ are indices from the first sequence, then there must not be two indices $l>k$ in the other sequence, such that index $i$ is matched with index $l$ and index $j$ is matched with index $k$ and vice versa.
+> - The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if j > i are indices from the first sequence, then there must not be two indices l > k in the other sequence, such that index i is matched with index l and index j is matched with index k and vice versa.
 >
 > ——Wikipedia
 
