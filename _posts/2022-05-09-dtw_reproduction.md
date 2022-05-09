@@ -72,7 +72,7 @@ class DTW(object):
         temp_map = self.__d_map.copy() # 这里有一些疑惑，我目前看到的资料都没有说明
         temp_map[0, 1:] = np.inf       # 将cost matrix的第一列第一行除00以外的位置
         temp_map[1:, 0] = np.inf       # 都设为无穷大，但是两个已有的python包都是这么做的。而且没有这一步的话
-        curr_x, curr_y = self.__d_x - 2, self.__d_y - 2   # 非对称序列可能找不到最短路径。
+        curr_x, curr_y = self.__d_x - 2, self.__d_y - 2   # 非等长序列可能找不到最短路径。
         path_x = np.array([curr_x])
         path_y = np.array([curr_y])
 
