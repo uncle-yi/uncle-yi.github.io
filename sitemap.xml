@@ -1,33 +1,70 @@
----
-sitemap:
-    priority: 0.7
-    changefreq: monthly
-    lastmod: 2013-07-28T12:49:30-05:00
----
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 13 Generated at: 2022-05-15 19:09:58 -->
 
-  {% for post in site.posts %}
   <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    {% if post.lastmod == null %}
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    {% else %}
-    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-    {% endif %}
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://uncle-yi.github.io/</loc>
+    <priority>1.00</priority>
   </url>
-  {% endfor %}
-  {% for page in site.pages %}
-  {% if page.sitemap != null and page.sitemap != empty %}
+
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    <priority>{{ page.sitemap.priority }}</priority>
+    <loc>https://uncle-yi.github.io/archive.html</loc>
+    <priority>1.00</priority>
   </url>
-  {% endif %}
-  {% endfor %}
+
+  <url>
+    <loc>https://uncle-yi.github.io/about.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/05/09/dtw_reproduction.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/05/05/note-can-ai-predict-animal-movement.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/04/25/maxent-intro.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/04/23/attenuation-coefficient-in-easy-rl.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/04/13/note-of-Qian-Weichang-tribune-56th.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/03/23/about-backquote-in-mathjax.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/02/18/hive-deployment.html</loc>
+    <priority>0.81</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/02/16/hadoop-fs-command.html</loc>
+    <priority>0.81</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/page2</loc>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://uncle-yi.github.io/2022/02/15/hdfs-principle.html</loc>
+    <priority>0.78</priority>
+  </url>
 
 </urlset>

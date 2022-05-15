@@ -1,0 +1,13 @@
+https://uncle-yi.github.io/
+https://uncle-yi.github.io/archive.html
+https://uncle-yi.github.io/about.html
+https://uncle-yi.github.io/2022/05/09/dtw_reproduction.html
+https://uncle-yi.github.io/2022/05/05/note-can-ai-predict-animal-movement.html
+https://uncle-yi.github.io/2022/04/25/maxent-intro.html
+https://uncle-yi.github.io/2022/04/23/attenuation-coefficient-in-easy-rl.html
+https://uncle-yi.github.io/2022/04/13/note-of-Qian-Weichang-tribune-56th.html
+https://uncle-yi.github.io/2022/03/23/about-backquote-in-mathjax.html
+https://uncle-yi.github.io/2022/02/18/hive-deployment.html
+https://uncle-yi.github.io/2022/02/16/hadoop-fs-command.html
+https://uncle-yi.github.io/page2/
+https://uncle-yi.github.io/2022/02/15/hdfs-principle.html
