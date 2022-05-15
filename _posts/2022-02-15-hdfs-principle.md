@@ -9,7 +9,7 @@ article_header:
 
 ## HDFS 简介
 
-HDFS (Hadoop Distributed File System) ，意为：Hadoop分布式文件系统。
+HDFS (Hadoop distributed file system) ，意为：Hadoop分布式文件系统。
 
 HDFS 作为文件系统有以下几种特性：
 
@@ -31,8 +31,8 @@ HDFS 作为文件系统有以下几种特性：
 ### 主从架构
 
 - HDFS 集群是标准的 master/slave 主从架构集群。
-- 一般由一个 Namenode 和多个 Datanode组成
-- Namenode 是 HDFS 的主节点，Datanode是从节点，两者共同完成存储服务。
+- 一般由一个 namenode 和多个 datanode组成
+- Namenode 是 HDFS 的主节点，datanode是从节点，两者共同完成存储服务。
 
 ### 分块存储
 
@@ -46,14 +46,14 @@ HDFS 作为文件系统有以下几种特性：
 
 ### 元数据管理
 
-- 在 HDFS 中，Namenode 管理的元数据具有两种类型：
+- 在 HDFS 中，namenode 管理的元数据具有两种类型：
   - 文件自身属性信息：名称、权限、修改时间、大小、复制因子、块大小
-  - 文件块位置映射信息：记录文件块和 Datanode 之间的映射信息，即那个快位于哪个节点上。
+  - 文件块位置映射信息：记录文件块和 datanode 之间的映射信息，即那个快位于哪个节点上。
 
 ### Namespace
 
 - HDFS 支持传统的层次型文件组织结构。用户可以对文件进行创建、删除、移动或重命名文件。
-- Namenode 负责维护文件系统的 namespace 名称空间，任何对文件系统名称空间或属性的修改都将被 Namenode 记录下来。
+- Namenode 负责维护文件系统的 namespace 名称空间，任何对文件系统名称空间或属性的修改都将被 namenode 记录下来。
 - HDFS 会给客户端提供一个统一的抽象目录树，客户端通过路径来访问文件。
 
 ## HDFS 各个角色职责介绍
@@ -64,7 +64,7 @@ HDFS 作为文件系统有以下几种特性：
 
 - Namenode 是 Hadoop 分布式文件系统的核心，架构中的主角色
 - Namenode 维护和管理文件系统元数据，包括名称空间目录树结构、文件和块的位置信息、访问权限等信息。
-- 基于此，Namenode成为了访问 HDFS 的唯一入口。
+- 基于此，namenode成为了访问 HDFS 的唯一入口。
 
 > tips:
 >
@@ -84,18 +84,18 @@ HDFS 作为文件系统有以下几种特性：
 #### 职责：
 
 - Datanode 是 Hadoop HDFS 中的从角色，负责具体的数据块存储。
-- Datanode 的数量决定了 HDFS 集群的整体数据存储能力。通过和 Namenode 配合维护着数据块。
+- Datanode 的数量决定了 HDFS 集群的整体数据存储能力。通过和 namenode 配合维护着数据块。
 
 >  tips:
 >
 > 1. Datanode 负责最终数据块 block 的存储。是集群的从角色。
-> 2. Datanode 启动时，会将自己注册到 Namenode 并汇报自己持有的块列表。
-> 3. 当某个 Datanode 关闭时，不会影响数据的可用性。Namenode 将安排由其他 Datanode 管理的块进行副本复制。
+> 2. Datanode 启动时，会将自己注册到 namenode 并汇报自己持有的块列表。
+> 3. 当某个 datanode 关闭时，不会影响数据的可用性。namenode 将安排由其他 datanode 管理的块进行副本复制。
 > 4. Datanode 所在机器通常配置有大量的硬盘空间。
 
-### 主角色辅助角色：secondarynamenode
+### 主角色辅助角色：secondary namenode
 
 #### 职责：
 
-- Secondary Namenode 充当 Namenode 的辅助节点，但不能替代 Namenode。
+- Secondary namenode 充当 namenode 的辅助节点，但不能替代 namenode。
 - 主要是帮助主角色进行元数据文件的合并动作。
