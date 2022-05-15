@@ -5,7 +5,7 @@ tags: 实现 记录
 
 ## 前言
 
-> In general, DTW (Dynamic time warping) is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules:
+> In general, DTW (dynamic time warping) is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules:
 >
 > - Every index from the first sequence must be matched with one or more indices from the other sequence, and vice versa
 > - The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
