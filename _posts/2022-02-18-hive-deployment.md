@@ -10,7 +10,7 @@ tags: Hadoop Hive 记录
 ## 部署过程
 首先是 jdk，这里我的环境里已经有之前自动安装的 Open-jdk 了，但是奈何我按着书的版本安装的 Hive 0.9.0 不支持 1.7 以上版本的 jdk，所以这里得卸载后重新安装（可能换了环境变量以后不重装也行，但是为了保险起见我还是卸载了）。
 
-Hadoop 和 Hive 的安装都很简单，只要解压源码包后设置环境变量即可，确保`HADOOP_HOME`、`HIVE_HOME`都指向正确的位置且`$HADOOP_HOME/bin`和`$HIVE_HOME/bin`都加入`PATH`即可。
+Hadoop 和 Hive 的安装都很简单，只要解压源码包后设置环境变量即可，确保 `HADOOP_HOME`、`HIVE_HOME` 都指向正确的位置且 `$HADOOP_HOME/bin` 和 `$HIVE_HOME/bin` 都加入 `PATH` 即可。
 
 你可以把环境变量设置到 /etc/profile 来让所有用户都可以访问，但如果你不想设置一堆权限问题的话，我推荐的配置方案是将所有软件安装到用户的home路径下，并在 $HOME/.bashrc 设置所有的环境变量。
 
