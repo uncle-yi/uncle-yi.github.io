@@ -1,1 +1,5 @@
+># allow google
+User-agent: *
+Allow: /
+
 Sitemap: https://uncle-yi.github.io/sitemap.xml
