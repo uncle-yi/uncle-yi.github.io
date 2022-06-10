@@ -34,7 +34,7 @@ $$\lt x^2\gt=\int_0^\infty p(x)x^2\ dx,$$
 
 $$\lt f(x)\gt=\int_0^\infty p(x)f(x)\ dx.$$
 
-那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt_{P_{ME}} = 4\ min$ ，这个过程可以被称作：constraint step。
+那么回到出租车等待时间，这里我们需要限制等待时间的概率分布 $P_{ME}(x)$ 的期望值 $\lt x\gt_{P_{ME}} = 4\ \min$ ，这个过程可以被称作：constraint step。
 
 下一步，可以称为 entropy maximization step，选择熵最大的分布。信息熵的公式如下：
 
@@ -56,7 +56,7 @@ $$\frac{\partial S}{\partial p_i}=\lambda_1 \frac{\partial g_1}{\partial p_i}+\l
 
 其中：$$\left\{
 	\begin{array}{**lr**}
-	g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ min, &\\
+	g_1(\vec p)=\sum_{i=0}^\infty p_ii=4\ \min, &\\
 	g_2(\vec p)=\sum_{i=0}^\infty p_i=1.
 	\end{array}
 \right.$$根据信息熵公式：

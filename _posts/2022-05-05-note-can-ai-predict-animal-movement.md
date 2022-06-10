@@ -45,13 +45,13 @@ tags: 论文 强化学习 笔记
 
 $$Q(s,a)=r(s;\theta)+E_{p(s'|s,a)}[V(s')],$$
 
-$$V(s)=softmax_aQ(s,a)=maxQ(s,a)+\log\left[1+\exp\{min\ Q(s,a)-max\ Q(s,a)\}\right].$$
+$$V(s)={\rm softmax}_aQ(s,a)=\max Q(s,a)+\log\left[1+\exp\{\min\ Q(s,a)-\max\ Q(s,a)\}\right].$$
 
 （在强化学习中）Q 函数定义的是在某一个状态采取某一个动作，有可能得到的回报的一个期望。而状态价值函数 $V(s)$ 定义的是在某一个状态下有可能得到的回报的期望。在普通的强化学习中，Q 和 V 的贝尔曼方程如下：
 
 $$Q(s,a)=r(s,a)+E_{p(s'|s,a)}[V(s')],$$
 
-$$V(s)=max(Q(s,a)).$$
+$$V(s)=\max(Q(s,a)).$$
 
 其中 Q 函数由即时回报 $r(s,a)$ 以及未来的累积回报期望组成。在逆强化学习中，奖励函数 r 被以下规则拆分：$r(s_t)=\theta^Tf(s_t)$。其中 $\theta$ 是权重向量， $f(s_t)$ 是状态 $s_t$ 的特征向量。$f(s_t)$ 可以从 $s_t$ 中推导而来，而 $\theta$ 则是逆强化学习推导奖励函数期间需要学习的权重。 综上所述，在 $\theta$ 确定的情况下，整条轨迹 $\zeta$ 的奖励为：
 
@@ -86,7 +86,7 @@ $$p_{\pi}(\zeta|\theta)=\frac{\exp(\sum_t \theta^Tf(s_t))}{Z(\theta)}=\frac{\exp
 
 而参数 $\theta$ 是最大化对数似然来估计的（$\hat\theta$ 代表最优的 $\theta$）：
 
-$$\hat \theta=argmax_\theta L(\theta)=argmax_{\theta}\frac{1}{\left|Z\right|}\sum_{\zeta \in Z}\log p_{\pi}(\zeta|\theta).$$
+$$\hat \theta=\arg\max_\theta L(\theta)=\arg\max_{\theta}\frac{1}{\left|Z\right|}\sum_{\zeta \in Z}\log p_{\pi}(\zeta|\theta).$$
 
 具体的方法是通过指数梯度法迭代求 $\theta$：
 
@@ -114,7 +114,7 @@ $$D_\zeta^{k+1}(s)=\sum_{s',a}D_\zeta^k(s')\pi(a|s;\theta)p(s'|s,a).$$
 
 ## 填补的完整过程
 
-给定一个缺失的部分，首先设置这个轨迹的始点和终点为 $s_0$ 和 $s_g$。然后再通过反向传播得到的 $\hat \theta$ 估计最优策略 $\pi(a\|s;\theta)$。反向传播通过 $s_g$ 计算 $Q(s,a)$ 和 $V(s)$。然后再用 $Q$ 和 $V$ 计算随机策略 $\pi(a\|s;\theta)$。我们对于填补的轨迹的目标，是每次选择 $argmax_a\pi(a\|s;\theta)$ 的状态 $s'$。从 $s_0$ 到 $s_g$ 都保持这个策略来选择动作。要注意的是通过特定策略生成的轨迹在$s_0$ 和 $s_g$ 相同的情况下应该是完全一样的；但是，可以通过估计的策略来进行概率插值（probabilistically interpolate trajectories）。
+给定一个缺失的部分，首先设置这个轨迹的始点和终点为 $s_0$ 和 $s_g$。然后再通过反向传播得到的 $\hat \theta$ 估计最优策略 $\pi(a\|s;\theta)$。反向传播通过 $s_g$ 计算 $Q(s,a)$ 和 $V(s)$。然后再用 $Q$ 和 $V$ 计算随机策略 $\pi(a\|s;\theta)$。我们对于填补的轨迹的目标，是每次选择 $\arg\max_a\pi(a\|s;\theta)$ 的状态 $s'$。从 $s_0$ 到 $s_g$ 都保持这个策略来选择动作。要注意的是通过特定策略生成的轨迹在$s_0$ 和 $s_g$ 相同的情况下应该是完全一样的；但是，可以通过估计的策略来进行概率插值（probabilistically interpolate trajectories）。
 
 ## 评估模型
 
