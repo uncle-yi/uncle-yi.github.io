@@ -1,12 +1,6 @@
 /* start custom scss snippet */
-@font-face {
-  font-family: sarasa;
-  src: url('../fonts/Sarasa-Gothic-SC-Regular-02.woff') format('woff'),
-       url('../fonts/Sarasa-Gothic-SC-Regular-02.ttf')  format('truetype');
-}
-
 body{
-  font-family: sarasa,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif;
 }
 
 .page__content{
