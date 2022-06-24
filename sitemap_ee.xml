@@ -3,7 +3,7 @@
   <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 13 Generated at: 2022-05-15 19:09:58 -->
     {% for page in site.pages %}
     <url>
-        <loc>https://uncle-yi.github.io/{{ page.url | remove: 'index.html' }}</loc>
+        <loc>https://uncle--yi.gitee.io/{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 </urlset>
