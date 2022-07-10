@@ -1,6 +1,6 @@
 ---
 title: 论文笔记：Can AI predicts animal movements?
-tags: 论文 强化学习 笔记
+tags: Ecosphere 论文 强化学习 笔记
 ---
 
 > 原文：Can AI predict animal movements? filling gaps in animal trajectories using inverse reinforcement learning

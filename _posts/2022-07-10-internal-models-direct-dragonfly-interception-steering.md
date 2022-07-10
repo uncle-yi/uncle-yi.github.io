@@ -21,7 +21,7 @@ tags: Nature 论文 生物学 笔记
 
 现在普遍认为蜻蜓在捕食时的拦截策略是一种被称作为 parallel navigation（平行定位）的策略。在 parallel navigation 中，追捕者在保持方向不变的情况下缩小自身至猎物的距离向量的长度。当猎物产生的角速度旋转距离向量时，会引起追捕者的反作用力以保持距离向量方向。PN 的优势在于，它是时间最优的，计算简单，不需要身体或世界的 internal model。但是整个拦截动作涉及许多的因素，这意味着要么蜻蜓的反应经受过较强的训练，要么转向并非是纯粹的反射，其中依然有 internal model 的引导。
 
-![Snipaste_2022-07-10_15-45-05](C:\Users\yilit\Pictures\Note Pictures\Snipaste_2022-07-10_15-45-05.png){:.border}
+![]({{ site.url }}\assets\images\2022-07-10\Snipaste_2022-07-10_15-45-05.png){:.border}
 
 <center>Parallel Navigation 示意图</center>
 
@@ -76,7 +76,7 @@ tags: Nature 论文 生物学 笔记
 
 补偿性的头部旋转可能是基于猎物图像，被反应性地驱动，也可能是基于和漂移相关的 internal model，被预测性地驱动。为了判断是哪种可能性，本文检查了「蜻蜓 foveation 扰动的累加」以及「头部旋转校正」之间的延迟。已知昆虫肌肉收缩大约需要 5 ms 来产生力，并且依靠视觉的反应性行为往往有更大的延迟。相反地，如果蜻蜓能预知 foveal drift，那么头部旋转就可以做到没有延迟，以此做到最优抵消，尤其是在捕捉匀速猎物时。最后处理得到的平均延迟是在 4 ms 左右，几乎等同于肌肉即刻收缩的延迟，这就意味着整个校正过程是预测性的机制。
 
-![Snipaste_2022-07-09_21-45-53](C:\Users\yilit\Pictures\Note Pictures\Snipaste_2022-07-09_21-45-53.png){:.border}
+![]({{ site.url }}\assets\images\2022-07-10\Snipaste_2022-07-09_21-45-53.png){:.border}
 
 <center>「头部转向校正」信号和「身体旋转+猎物相对移动（造成的漂移）」信号之间的互相关系数随延迟变化的曲线</center>
 
