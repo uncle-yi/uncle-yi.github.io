@@ -21,7 +21,7 @@ tags: Nature 论文 生物学 笔记
 
 现在普遍认为蜻蜓在捕食时的拦截策略是一种被称作为 parallel navigation（平行定位）的策略。在 parallel navigation 中，追捕者在保持方向不变的情况下缩小自身至猎物的距离向量的长度。当猎物产生的角速度旋转距离向量时，会引起追捕者的反作用力以保持距离向量方向。PN 的优势在于，它是时间最优的，计算简单，不需要身体或世界的 internal model。但是整个拦截动作涉及许多的因素，这意味着要么蜻蜓的反应经受过较强的训练，要么转向并非是纯粹的反射，其中依然有 internal model 的引导。
 
-![]({{ site.url }}\assets\images\2022-07-10\Snipaste_2022-07-10_15-45-05.png#pic_center =200x){:.border}
+![]({{ site.url }}\assets\images\2022-07-10\Snipaste_2022-07-10_15-45-05.png){width=250}{:.border}
 
 <center>图 1：Parallel Navigation 示意图</center>
 
