@@ -197,6 +197,5 @@ dtw.plot()
 
 ## 引用
 
-[Dynamic time warping - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_time_warping)
-
-[DTW（动态时间规整）算法原理与应用_bilibili](https://www.bilibili.com/video/BV12r4y1A7mT?share_source=copy_web)
+1. [Dynamic time warping - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_time_warping)
+2. [DTW（动态时间规整）算法原理与应用_bilibili](https://www.bilibili.com/video/BV12r4y1A7mT?share_source=copy_web)

@@ -126,7 +126,7 @@ $$D_\zeta^{k+1}(s)=\sum_{s',a}D_\zeta^k(s')\pi(a|s;\theta)p(s'|s,a).$$
 
 ## 引用
 
-1. [T. Hirakawa et al., "Can AI predict animal movements? filling gaps in animal trajectories using inverse reinforcement learning", *Ecosphere*, vol. 9, no. 10, 2018.](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.2447)
+1. [Can AI predict animal movements? Filling gaps in animal trajectories using inverse reinforcement learning - Hirakawa - 2018 - Ecosphere - Wiley Online Library](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.2447)
 
 
 
