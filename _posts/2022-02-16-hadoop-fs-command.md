@@ -7,6 +7,8 @@ tags: Hadoop 笔记
 
 Hadoop 提供了一个在终端运行的 shell 命令行客户端：hadoop fs [generic option]
 
+<!--more-->
+
 ```shell
 hadoop fs -ls <directory> # 显示 directory 下的所有文件
 # 若 directory 未指定前缀（系统），则其读取环境变量中的 fs. defaultFS 属性，以该属性值作为默认文件系统。

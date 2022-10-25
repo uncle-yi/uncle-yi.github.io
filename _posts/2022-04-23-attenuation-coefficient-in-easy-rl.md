@@ -4,6 +4,8 @@ tags: 记录 强化学习
 ---
 最近在学习强化学习，买了一本《Easy RL 强化学习教程》来读。书是好书，虽然第一版有一些勘误，不过内容综合了很多国内机器学习大鳄的教程，还是值得一读的。大家感兴趣的话可以先到他们的 GitHub Page 页面看一下电子版：[EasyRL (datawhalechina.github.io)](https://datawhalechina.github.io/easy-rl/#/) 。
 
+<!--more-->
+
 写这篇博客主要是因为在书中实现 QLearning 的时候，定义了一个衰减系数 $\epsilon$，但是没有该系数衰减公式的说明，所以我写了个可视化方便理解它是如何衰减的。源代码如下：
 
 ```python

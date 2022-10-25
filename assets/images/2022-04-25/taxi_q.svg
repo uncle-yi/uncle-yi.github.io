@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="288pt" version="1.1" viewBox="0 0 576 288" width="576pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2022-04-29T10:04:17.315702</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.4.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 288 
+L 576 288 
+L 576 0 
+L 0 0 
+z
+" style="fill:none;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 72 252 
+L 518.4 252 
+L 518.4 34.56 
+L 72 34.56 
+z
+" style="fill:#ffffff;"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path clip-path="url(#pea9fd7c97a)" d="M 92.290909 252 
+L 92.290909 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path d="M 0 0 
+L 0 3.5 
+" id="mc07df11d1a" style="stroke:#000000;stroke-width:0.8;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="92.290909" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 0 -->
+      <g transform="translate(89.055753 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 2074 -64 
+Q 1299 -64 876 560 
+Q 454 1184 454 2330 
+Q 454 3456 883 4086 
+Q 1312 4717 2074 4717 
+Q 2835 4717 3264 4086 
+Q 3693 3456 3693 2330 
+Q 3693 1184 3267 560 
+Q 2842 -64 2074 -64 
+z
+M 2074 435 
+Q 2579 435 2860 928 
+Q 3142 1421 3142 2330 
+Q 3142 3232 2860 3731 
+Q 2579 4230 2074 4230 
+Q 1568 4230 1283 3731 
+Q 998 3232 998 2330 
+Q 998 1421 1283 928 
+Q 1568 435 2074 435 
+z
+" id="Sarasa-Gothic-SC-Regular-30" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path clip-path="url(#pea9fd7c97a)" d="M 161.073652 252 
+L 161.073652 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="161.073652" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 10 -->
+      <g transform="translate(154.603339 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 2701 4653 
+L 2701 0 
+L 2138 0 
+L 2138 4064 
+L 2112 4064 
+L 973 3309 
+L 973 3885 
+L 2138 4653 
+L 2701 4653 
+z
+" id="Sarasa-Gothic-SC-Regular-31" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-31"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path clip-path="url(#pea9fd7c97a)" d="M 229.856394 252 
+L 229.856394 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="229.856394" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 20 -->
+      <g transform="translate(223.386082 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 621 0 
+L 621 410 
+L 2157 2093 
+Q 2426 2387 2602 2604 
+Q 2778 2822 2861 3017 
+Q 2944 3213 2944 3430 
+Q 2944 3795 2688 4012 
+Q 2432 4230 2054 4230 
+Q 1651 4230 1411 3987 
+Q 1171 3744 1171 3347 
+L 634 3347 
+Q 634 3757 822 4064 
+Q 1011 4371 1337 4544 
+Q 1664 4717 2074 4717 
+Q 2483 4717 2800 4544 
+Q 3117 4371 3296 4080 
+Q 3475 3789 3475 3430 
+Q 3475 3168 3382 2925 
+Q 3290 2682 3062 2384 
+Q 2835 2086 2438 1658 
+L 1389 538 
+L 1389 499 
+L 3552 499 
+L 3552 0 
+L 621 0 
+z
+" id="Sarasa-Gothic-SC-Regular-32" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-32"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path clip-path="url(#pea9fd7c97a)" d="M 298.639137 252 
+L 298.639137 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="298.639137" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 30 -->
+      <g transform="translate(292.168825 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 2093 -64 
+Q 1638 -64 1289 89 
+Q 941 243 733 521 
+Q 525 800 512 1165 
+L 1082 1165 
+Q 1107 826 1392 630 
+Q 1677 435 2080 435 
+Q 2528 435 2819 665 
+Q 3110 896 3110 1261 
+Q 3110 1651 2825 1894 
+Q 2541 2138 2010 2138 
+L 1638 2138 
+L 1638 2637 
+L 2010 2637 
+Q 2426 2637 2685 2857 
+Q 2944 3078 2944 3443 
+Q 2944 3795 2713 4012 
+Q 2483 4230 2099 4230 
+Q 1856 4230 1645 4140 
+Q 1434 4051 1299 3888 
+Q 1165 3725 1152 3488 
+L 608 3488 
+Q 621 3859 829 4134 
+Q 1037 4410 1373 4563 
+Q 1709 4717 2112 4717 
+Q 2541 4717 2851 4544 
+Q 3162 4371 3325 4086 
+Q 3488 3802 3488 3475 
+Q 3488 3078 3283 2803 
+Q 3078 2528 2726 2419 
+L 2726 2381 
+Q 3168 2310 3414 2009 
+Q 3661 1709 3661 1261 
+Q 3661 883 3456 582 
+Q 3251 282 2896 109 
+Q 2541 -64 2093 -64 
+z
+" id="Sarasa-Gothic-SC-Regular-33" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-33"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path clip-path="url(#pea9fd7c97a)" d="M 367.42188 252 
+L 367.42188 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="367.42188" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 40 -->
+      <g transform="translate(360.951567 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 371 954 
+L 371 1421 
+L 2419 4653 
+L 3098 4653 
+L 3098 1453 
+L 3738 1453 
+L 3738 954 
+L 3098 954 
+L 3098 0 
+L 2566 0 
+L 2566 954 
+L 371 954 
+z
+M 2566 1453 
+L 2566 3936 
+L 2528 3936 
+L 979 1491 
+L 979 1453 
+L 2566 1453 
+z
+" id="Sarasa-Gothic-SC-Regular-34" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-34"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path clip-path="url(#pea9fd7c97a)" d="M 436.204622 252 
+L 436.204622 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="436.204622" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 50 -->
+      <g transform="translate(429.73431 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 2054 -64 
+Q 1658 -64 1334 96 
+Q 1011 256 819 531 
+Q 627 806 608 1165 
+L 1152 1165 
+Q 1184 845 1440 640 
+Q 1696 435 2054 435 
+Q 2342 435 2566 569 
+Q 2790 704 2918 941 
+Q 3046 1178 3046 1472 
+Q 3046 1779 2912 2019 
+Q 2778 2259 2547 2396 
+Q 2317 2534 2016 2534 
+Q 1805 2541 1581 2473 
+Q 1357 2406 1210 2298 
+L 685 2362 
+L 966 4653 
+L 3379 4653 
+L 3379 4154 
+L 1434 4154 
+L 1274 2784 
+L 1299 2784 
+Q 1440 2893 1657 2969 
+Q 1875 3046 2112 3046 
+Q 2534 3046 2870 2841 
+Q 3206 2637 3398 2285 
+Q 3590 1933 3590 1485 
+Q 3590 1037 3392 688 
+Q 3194 339 2845 137 
+Q 2496 -64 2054 -64 
+z
+" id="Sarasa-Gothic-SC-Regular-35" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path clip-path="url(#pea9fd7c97a)" d="M 504.987365 252 
+L 504.987365 34.56 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="504.987365" xlink:href="#mc07df11d1a" y="252"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 60 -->
+      <g transform="translate(498.517053 266.270312)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 2099 -64 
+Q 1811 -58 1526 44 
+Q 1242 147 1005 396 
+Q 768 646 624 1072 
+Q 480 1498 480 2144 
+Q 480 3379 934 4048 
+Q 1389 4717 2170 4717 
+Q 2566 4717 2870 4563 
+Q 3174 4410 3366 4131 
+Q 3558 3853 3616 3488 
+L 3066 3488 
+Q 2989 3802 2765 4010 
+Q 2541 4218 2170 4218 
+Q 1632 4218 1321 3747 
+Q 1011 3277 1011 2426 
+L 1043 2426 
+Q 1235 2714 1532 2880 
+Q 1830 3046 2189 3046 
+Q 2592 3046 2925 2848 
+Q 3258 2650 3456 2301 
+Q 3654 1952 3654 1498 
+Q 3654 1069 3462 710 
+Q 3270 352 2921 141 
+Q 2573 -70 2099 -64 
+z
+M 2099 435 
+Q 2387 435 2614 579 
+Q 2842 723 2976 963 
+Q 3110 1203 3110 1498 
+Q 3110 1786 2982 2026 
+Q 2854 2266 2630 2406 
+Q 2406 2547 2118 2547 
+Q 1830 2547 1596 2400 
+Q 1363 2253 1228 2013 
+Q 1094 1773 1088 1491 
+Q 1088 1216 1219 973 
+Q 1350 730 1580 582 
+Q 1811 435 2099 435 
+z
+" id="Sarasa-Gothic-SC-Regular-36" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-36"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_8">
+     <!-- 等待时间（min） -->
+     <g transform="translate(256.744531 279.789062)scale(0.1 -0.1)">
+      <defs>
+       <path d="M 3699 5408 
+L 4160 5299 
+Q 4115 5178 4067 5062 
+Q 4019 4947 3962 4838 
+L 6048 4838 
+L 6048 4429 
+L 4685 4429 
+Q 4794 4275 4890 4124 
+Q 4986 3974 5037 3846 
+L 4621 3667 
+Q 4563 3827 4438 4035 
+Q 4314 4243 4166 4429 
+L 3731 4429 
+Q 3642 4288 3542 4157 
+Q 3443 4026 3334 3910 
+L 3437 3910 
+L 3437 3469 
+L 5510 3469 
+L 5510 3066 
+L 3437 3066 
+L 3437 2490 
+L 6118 2490 
+L 6118 2067 
+L 4742 2067 
+L 4742 1504 
+L 5946 1504 
+L 5946 1082 
+L 4742 1082 
+L 4742 58 
+Q 4742 -154 4684 -266 
+Q 4627 -378 4461 -435 
+Q 4301 -480 4029 -493 
+Q 3757 -506 3360 -506 
+Q 3341 -403 3286 -275 
+Q 3232 -147 3181 -51 
+Q 3507 -58 3766 -61 
+Q 4026 -64 4109 -58 
+Q 4198 -51 4227 -25 
+Q 4256 0 4256 64 
+L 4256 1082 
+L 512 1082 
+L 512 1504 
+L 4256 1504 
+L 4256 2067 
+L 307 2067 
+L 307 2490 
+L 2944 2490 
+L 2944 3066 
+L 941 3066 
+L 941 3469 
+L 2944 3469 
+L 2944 3910 
+L 2771 4019 
+Q 3072 4269 3315 4633 
+Q 3558 4998 3699 5408 
+z
+M 1427 806 
+L 1779 1082 
+Q 1990 954 2201 784 
+Q 2413 614 2595 444 
+Q 2778 275 2886 122 
+L 2515 -179 
+Q 2413 -26 2233 150 
+Q 2054 326 1846 499 
+Q 1638 672 1427 806 
+z
+M 1190 5408 
+L 1645 5286 
+Q 1600 5171 1549 5059 
+Q 1498 4947 1446 4838 
+L 3123 4838 
+L 3123 4429 
+L 1958 4429 
+Q 2029 4275 2093 4121 
+Q 2157 3968 2182 3859 
+L 1754 3699 
+Q 1728 3846 1648 4044 
+Q 1568 4243 1478 4429 
+L 1222 4429 
+Q 1082 4198 928 3996 
+Q 774 3795 614 3635 
+Q 550 3693 425 3776 
+Q 301 3859 211 3904 
+Q 512 4186 771 4582 
+Q 1030 4979 1190 5408 
+z
+" id="Sarasa-Gothic-SC-Regular-7b49" transform="scale(0.015625)"/>
+       <path d="M 2656 1306 
+L 3053 1510 
+Q 3200 1344 3353 1145 
+Q 3507 947 3632 755 
+Q 3757 563 3827 410 
+L 3418 166 
+Q 3354 326 3229 524 
+Q 3104 723 2957 928 
+Q 2810 1133 2656 1306 
+z
+M 1632 5363 
+L 2080 5184 
+Q 1894 4909 1641 4627 
+Q 1389 4346 1101 4093 
+Q 813 3840 531 3648 
+Q 493 3731 413 3852 
+Q 333 3974 282 4045 
+Q 531 4211 790 4432 
+Q 1050 4653 1274 4896 
+Q 1498 5139 1632 5363 
+z
+M 3878 5344 
+L 4358 5344 
+L 4358 4544 
+L 5824 4544 
+L 5824 4109 
+L 4358 4109 
+L 4358 3296 
+L 6157 3296 
+L 6157 2854 
+L 5254 2854 
+L 5254 2138 
+L 6112 2138 
+L 6112 1696 
+L 5254 1696 
+L 5254 70 
+Q 5254 -141 5196 -253 
+Q 5139 -365 4992 -422 
+Q 4838 -480 4588 -489 
+Q 4339 -499 3962 -499 
+Q 3949 -403 3901 -272 
+Q 3853 -141 3802 -38 
+Q 4090 -51 4330 -51 
+Q 4570 -51 4646 -45 
+Q 4781 -45 4781 70 
+L 4781 1696 
+L 2170 1696 
+L 2170 2138 
+L 4781 2138 
+L 4781 2854 
+L 2093 2854 
+L 2093 3296 
+L 3878 3296 
+L 3878 4109 
+L 2470 4109 
+L 2470 4544 
+L 3878 4544 
+L 3878 5344 
+z
+M 1741 3949 
+L 2163 3782 
+Q 2054 3584 1923 3385 
+Q 1792 3187 1645 2995 
+L 1645 -506 
+L 1184 -506 
+L 1184 2445 
+Q 1005 2246 816 2067 
+Q 627 1888 442 1734 
+Q 416 1818 333 1971 
+Q 250 2125 186 2208 
+Q 474 2419 762 2700 
+Q 1050 2982 1306 3302 
+Q 1562 3622 1741 3949 
+z
+" id="Sarasa-Gothic-SC-Regular-5f85" transform="scale(0.015625)"/>
+       <path d="M 3034 2893 
+L 3430 3104 
+Q 3603 2861 3795 2579 
+Q 3987 2298 4156 2035 
+Q 4326 1773 4435 1574 
+L 4013 1331 
+Q 3910 1530 3744 1798 
+Q 3578 2067 3392 2358 
+Q 3206 2650 3034 2893 
+z
+M 2074 2573 
+L 979 2573 
+L 979 1114 
+L 2074 1114 
+L 2074 2573 
+z
+M 2074 3002 
+L 2074 4403 
+L 979 4403 
+L 979 3002 
+L 2074 3002 
+z
+M 518 4838 
+L 2522 4838 
+L 2522 678 
+L 979 678 
+L 979 160 
+L 518 160 
+L 518 4838 
+z
+M 4890 5344 
+L 5376 5344 
+L 5376 4096 
+L 6157 4096 
+L 6157 3622 
+L 5376 3622 
+L 5376 211 
+Q 5376 -51 5302 -176 
+Q 5229 -301 5056 -358 
+Q 4883 -422 4569 -435 
+Q 4256 -448 3776 -448 
+Q 3750 -346 3699 -202 
+Q 3648 -58 3597 45 
+Q 3974 32 4291 32 
+Q 4608 32 4710 38 
+Q 4890 38 4890 211 
+L 4890 3622 
+L 2816 3622 
+L 2816 4096 
+L 4890 4096 
+L 4890 5344 
+z
+" id="Sarasa-Gothic-SC-Regular-65f6" transform="scale(0.015625)"/>
+       <path d="M 582 3936 
+L 1075 3936 
+L 1075 -512 
+L 582 -512 
+L 582 3936 
+z
+M 678 5062 
+L 1050 5293 
+Q 1274 5094 1504 4838 
+Q 1734 4582 1850 4378 
+L 1453 4122 
+Q 1382 4250 1254 4416 
+Q 1126 4582 976 4752 
+Q 826 4922 678 5062 
+z
+M 2426 1888 
+L 2426 1024 
+L 3962 1024 
+L 3962 1888 
+L 2426 1888 
+z
+M 2426 3142 
+L 2426 2291 
+L 3962 2291 
+L 3962 3142 
+L 2426 3142 
+z
+M 1990 3546 
+L 4416 3546 
+L 4416 627 
+L 1990 627 
+L 1990 3546 
+z
+M 2253 5018 
+L 5843 5018 
+L 5843 70 
+Q 5843 -128 5795 -233 
+Q 5747 -339 5619 -403 
+Q 5491 -461 5283 -470 
+Q 5075 -480 4781 -480 
+Q 4762 -390 4720 -259 
+Q 4678 -128 4627 -38 
+Q 4832 -45 5005 -45 
+Q 5178 -45 5242 -45 
+Q 5350 -38 5350 70 
+L 5350 4563 
+L 2253 4563 
+L 2253 5018 
+z
+" id="Sarasa-Gothic-SC-Regular-95f4" transform="scale(0.015625)"/>
+       <path d="M 4448 2432 
+Q 4448 3366 4797 4131 
+Q 5146 4896 5722 5478 
+L 6106 5280 
+Q 5555 4710 5235 4000 
+Q 4915 3290 4915 2432 
+Q 4915 1581 5235 867 
+Q 5555 154 6106 -416 
+L 5722 -614 
+Q 5146 -26 4797 736 
+Q 4448 1498 4448 2432 
+z
+" id="Sarasa-Gothic-SC-Regular-ff08" transform="scale(0.015625)"/>
+       <path d="M 493 0 
+L 493 3488 
+L 1011 3488 
+L 1011 2944 
+L 1056 2944 
+Q 1165 3226 1408 3382 
+Q 1651 3539 1990 3539 
+Q 2336 3539 2566 3382 
+Q 2797 3226 2925 2944 
+L 2963 2944 
+Q 3098 3213 3366 3376 
+Q 3635 3539 4006 3539 
+Q 4480 3539 4777 3244 
+Q 5075 2950 5075 2336 
+L 5075 0 
+L 4538 0 
+L 4538 2336 
+Q 4538 2720 4326 2886 
+Q 4115 3053 3827 3053 
+Q 3456 3053 3254 2832 
+Q 3053 2611 3053 2272 
+L 3053 0 
+L 2509 0 
+L 2509 2394 
+Q 2509 2688 2317 2870 
+Q 2125 3053 1818 3053 
+Q 1606 3053 1427 2941 
+Q 1248 2829 1139 2633 
+Q 1030 2438 1030 2182 
+L 1030 0 
+L 493 0 
+z
+" id="Sarasa-Gothic-SC-Regular-6d" transform="scale(0.015625)"/>
+       <path d="M 493 0 
+L 493 3488 
+L 1030 3488 
+L 1030 0 
+L 493 0 
+z
+M 762 4070 
+Q 608 4070 496 4179 
+Q 384 4288 384 4435 
+Q 384 4589 496 4694 
+Q 608 4800 762 4800 
+Q 922 4800 1034 4694 
+Q 1146 4589 1146 4435 
+Q 1146 4288 1034 4179 
+Q 922 4070 762 4070 
+z
+" id="Sarasa-Gothic-SC-Regular-69" transform="scale(0.015625)"/>
+       <path d="M 1030 2099 
+L 1030 0 
+L 493 0 
+L 493 3488 
+L 1011 3488 
+L 1011 2944 
+L 1056 2944 
+Q 1178 3213 1427 3376 
+Q 1677 3539 2074 3539 
+Q 2605 3539 2931 3212 
+Q 3258 2886 3258 2221 
+L 3258 0 
+L 2720 0 
+L 2720 2182 
+Q 2720 2592 2505 2822 
+Q 2291 3053 1920 3053 
+Q 1536 3053 1283 2806 
+Q 1030 2560 1030 2099 
+z
+" id="Sarasa-Gothic-SC-Regular-6e" transform="scale(0.015625)"/>
+       <path d="M 1952 2432 
+Q 1952 1498 1603 736 
+Q 1254 -26 678 -614 
+L 294 -416 
+Q 845 154 1165 867 
+Q 1485 1581 1485 2432 
+Q 1485 3290 1165 4000 
+Q 845 4710 294 5280 
+L 678 5478 
+Q 1254 4896 1603 4131 
+Q 1952 3366 1952 2432 
+z
+" id="Sarasa-Gothic-SC-Regular-ff09" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#Sarasa-Gothic-SC-Regular-7b49"/>
+      <use x="99.999985" xlink:href="#Sarasa-Gothic-SC-Regular-5f85"/>
+      <use x="199.999969" xlink:href="#Sarasa-Gothic-SC-Regular-65f6"/>
+      <use x="299.999954" xlink:href="#Sarasa-Gothic-SC-Regular-95f4"/>
+      <use x="399.999939" xlink:href="#Sarasa-Gothic-SC-Regular-ff08"/>
+      <use x="499.999924" xlink:href="#Sarasa-Gothic-SC-Regular-6d"/>
+      <use x="586.899918" xlink:href="#Sarasa-Gothic-SC-Regular-69"/>
+      <use x="610.599915" xlink:href="#Sarasa-Gothic-SC-Regular-6e"/>
+      <use x="669.099899" xlink:href="#Sarasa-Gothic-SC-Regular-ff09"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_15">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 242.116742 
+L 518.4 242.116742 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_16">
+      <defs>
+       <path d="M 0 0 
+L -3.5 0 
+" id="m98f179d6f9" style="stroke:#000000;stroke-width:0.8;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="242.116742"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 0.000 -->
+      <g transform="translate(36.36875 245.751899)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 883 -38 
+Q 717 -38 595 83 
+Q 474 205 474 371 
+Q 474 544 595 662 
+Q 717 781 883 781 
+Q 1050 781 1171 662 
+Q 1293 544 1293 371 
+Q 1293 205 1171 83 
+Q 1050 -38 883 -38 
+z
+" id="Sarasa-Gothic-SC-Regular-2e" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_17">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 217.407604 
+L 518.4 217.407604 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="217.407604"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 0.025 -->
+      <g transform="translate(36.36875 221.04276)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-32"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_19">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 192.698466 
+L 518.4 192.698466 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="192.698466"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 0.050 -->
+      <g transform="translate(36.36875 196.333622)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_21">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 167.989328 
+L 518.4 167.989328 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="167.989328"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- 0.075 -->
+      <g transform="translate(36.36875 171.624484)scale(0.1 -0.1)">
+       <defs>
+        <path d="M 870 0 
+L 2957 4115 
+L 2957 4154 
+L 557 4154 
+L 557 4653 
+L 3539 4653 
+L 3539 4128 
+L 1466 0 
+L 870 0 
+z
+" id="Sarasa-Gothic-SC-Regular-37" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-37"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_23">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 143.280189 
+L 518.4 143.280189 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="143.280189"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- 0.100 -->
+      <g transform="translate(36.36875 146.915346)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-31"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_25">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 118.571051 
+L 518.4 118.571051 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="118.571051"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- 0.125 -->
+      <g transform="translate(36.36875 122.206207)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-31"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-32"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_27">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 93.861913 
+L 518.4 93.861913 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="93.861913"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <!-- 0.150 -->
+      <g transform="translate(36.36875 97.497069)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-31"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_29">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 69.152775 
+L 518.4 69.152775 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="69.152775"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <!-- 0.175 -->
+      <g transform="translate(36.36875 72.787931)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-31"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-37"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-35"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_31">
+      <path clip-path="url(#pea9fd7c97a)" d="M 72 44.443636 
+L 518.4 44.443636 
+" style="fill:none;stroke:#b0b0b0;stroke-linecap:square;stroke-width:0.8;"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="72" xlink:href="#m98f179d6f9" y="44.443636"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <!-- 0.200 -->
+      <g transform="translate(36.36875 48.078793)scale(0.1 -0.1)">
+       <use xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="64.699997" xlink:href="#Sarasa-Gothic-SC-Regular-2e"/>
+       <use x="92.199982" xlink:href="#Sarasa-Gothic-SC-Regular-32"/>
+       <use x="156.899979" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+       <use x="221.599976" xlink:href="#Sarasa-Gothic-SC-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_18">
+     <!-- 概率 -->
+     <g transform="translate(30.31875 153.28)rotate(-90)scale(0.1 -0.1)">
+      <defs>
+       <path d="M 3987 2304 
+Q 3968 2374 3917 2492 
+Q 3866 2611 3827 2675 
+Q 3891 2694 3926 2726 
+Q 3962 2758 3987 2842 
+Q 4006 2899 4041 3072 
+Q 4077 3245 4112 3469 
+Q 4147 3693 4179 3894 
+Q 4211 4096 4224 4211 
+L 4614 4211 
+Q 4589 4058 4547 3805 
+Q 4506 3552 4458 3280 
+Q 4410 3008 4371 2790 
+L 4838 2790 
+Q 4928 3290 4953 3754 
+Q 4979 4218 4979 4602 
+L 3987 4602 
+L 3987 5024 
+L 5990 5024 
+L 5990 4602 
+L 5370 4602 
+Q 5370 4211 5344 3750 
+Q 5318 3290 5235 2790 
+L 6086 2790 
+L 6086 2381 
+L 5158 2381 
+L 5082 2048 
+L 5280 2048 
+L 5280 90 
+Q 5280 64 5286 32 
+Q 5293 0 5318 -13 
+Q 5350 -45 5434 -45 
+Q 5466 -45 5514 -45 
+Q 5562 -45 5600 -45 
+Q 5645 -45 5683 -38 
+Q 5722 -32 5747 -13 
+Q 5792 32 5811 141 
+Q 5824 230 5827 422 
+Q 5830 614 5830 851 
+Q 5882 806 5965 761 
+Q 6048 717 6118 691 
+Q 6112 454 6099 217 
+Q 6086 -19 6061 -109 
+Q 6022 -288 5901 -371 
+Q 5856 -403 5776 -422 
+Q 5696 -442 5613 -442 
+Q 5562 -442 5475 -442 
+Q 5389 -442 5338 -442 
+Q 5254 -442 5164 -419 
+Q 5075 -397 5011 -339 
+Q 4947 -282 4924 -189 
+Q 4902 -96 4902 115 
+L 4902 1472 
+Q 4717 947 4419 438 
+Q 4122 -70 3686 -531 
+Q 3622 -474 3520 -403 
+Q 3418 -333 3328 -294 
+Q 3930 320 4262 1011 
+Q 4595 1702 4755 2381 
+L 4454 2381 
+Q 4288 2381 4160 2358 
+Q 4032 2336 3987 2304 
+z
+M 3341 3501 
+L 2560 3501 
+L 2560 2714 
+L 3341 2714 
+L 3341 3501 
+z
+M 3341 3859 
+L 3341 4602 
+L 2560 4602 
+L 2560 3859 
+L 3341 3859 
+z
+M 2157 45 
+Q 2125 115 2048 217 
+Q 1971 320 1907 378 
+Q 1984 442 2077 592 
+Q 2170 742 2170 960 
+L 2170 5005 
+L 3712 5005 
+L 3712 2317 
+L 2560 2317 
+L 2560 826 
+L 3302 1248 
+Q 3238 1395 3171 1545 
+Q 3104 1696 3034 1830 
+L 3360 1971 
+Q 3475 1766 3584 1532 
+Q 3693 1299 3782 1075 
+Q 3872 851 3923 685 
+L 3571 518 
+Q 3520 704 3437 915 
+Q 3046 672 2806 521 
+Q 2566 371 2435 278 
+Q 2304 186 2246 134 
+Q 2189 83 2157 45 
+z
+M 1011 5376 
+L 1446 5376 
+L 1446 4019 
+L 1997 4019 
+L 1997 3571 
+L 1446 3571 
+L 1446 3328 
+Q 1498 3251 1590 3097 
+Q 1683 2944 1782 2774 
+Q 1882 2605 1965 2464 
+Q 2048 2323 2080 2259 
+L 1805 1869 
+Q 1754 2010 1654 2227 
+Q 1555 2445 1446 2656 
+L 1446 -506 
+L 1011 -506 
+L 1011 2163 
+Q 890 1734 746 1347 
+Q 602 960 442 691 
+Q 397 787 323 905 
+Q 250 1024 192 1101 
+Q 365 1382 518 1795 
+Q 672 2208 797 2672 
+Q 922 3136 998 3571 
+L 339 3571 
+L 339 4019 
+L 1011 4019 
+L 1011 5376 
+z
+" id="Sarasa-Gothic-SC-Regular-6982" transform="scale(0.015625)"/>
+       <path d="M 5306 4115 
+L 5709 3872 
+Q 5491 3648 5232 3430 
+Q 4973 3213 4749 3059 
+L 4397 3296 
+Q 4544 3405 4710 3545 
+Q 4877 3686 5037 3836 
+Q 5197 3987 5306 4115 
+z
+M 358 2157 
+Q 659 2285 1084 2480 
+Q 1510 2675 1946 2886 
+L 2042 2522 
+Q 1670 2323 1296 2124 
+Q 922 1926 602 1773 
+L 358 2157 
+z
+M 544 3834 
+L 870 4096 
+Q 1133 3949 1414 3744 
+Q 1696 3539 1856 3373 
+L 1510 3078 
+Q 1414 3187 1251 3321 
+Q 1088 3456 902 3590 
+Q 717 3725 544 3834 
+z
+M 4333 2611 
+L 4672 2867 
+Q 4890 2746 5133 2589 
+Q 5376 2432 5593 2275 
+Q 5811 2118 5952 1990 
+L 5594 1702 
+Q 5459 1830 5248 1990 
+Q 5037 2150 4797 2313 
+Q 4557 2477 4333 2611 
+z
+M 326 1293 
+L 2944 1293 
+L 2944 1818 
+L 3456 1818 
+L 3456 1293 
+L 6080 1293 
+L 6080 845 
+L 3456 845 
+L 3456 -512 
+L 2944 -512 
+L 2944 845 
+L 326 845 
+L 326 1293 
+z
+M 2784 5299 
+L 3251 5421 
+Q 3360 5280 3469 5110 
+Q 3578 4941 3642 4800 
+L 6022 4800 
+L 6022 4358 
+L 3302 4358 
+Q 3021 3930 2694 3584 
+L 3520 3629 
+Q 3629 3757 3741 3891 
+Q 3853 4026 3955 4160 
+L 4346 3936 
+Q 3962 3488 3546 3078 
+Q 3130 2669 2707 2330 
+L 3840 2426 
+Q 3770 2534 3690 2640 
+Q 3610 2746 3526 2835 
+L 3885 2982 
+Q 4032 2822 4179 2624 
+Q 4326 2426 4448 2237 
+Q 4570 2048 4634 1901 
+L 4250 1728 
+Q 4224 1805 4176 1891 
+Q 4128 1978 4070 2074 
+Q 3443 2010 3062 1971 
+Q 2682 1933 2477 1907 
+Q 2272 1882 2179 1859 
+Q 2086 1837 2035 1818 
+Q 2022 1882 1980 2013 
+Q 1939 2144 1901 2234 
+Q 2010 2246 2138 2332 
+Q 2266 2419 2426 2554 
+Q 2522 2630 2714 2806 
+Q 2906 2982 3136 3219 
+Q 2771 3194 2576 3171 
+Q 2381 3149 2297 3129 
+Q 2214 3110 2163 3091 
+Q 2144 3162 2102 3290 
+Q 2061 3418 2029 3501 
+Q 2163 3533 2310 3706 
+Q 2374 3770 2518 3949 
+Q 2662 4128 2803 4358 
+L 454 4358 
+L 454 4800 
+L 3078 4800 
+Q 3014 4928 2934 5059 
+Q 2854 5190 2784 5299 
+z
+" id="Sarasa-Gothic-SC-Regular-7387" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#Sarasa-Gothic-SC-Regular-6982"/>
+      <use x="99.999985" xlink:href="#Sarasa-Gothic-SC-Regular-7387"/>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_33">
+    <path clip-path="url(#pea9fd7c97a)" d="M 92.290909 44.443636 
+L 99.169183 83.978258 
+L 106.047458 115.605955 
+L 112.925732 140.908112 
+L 119.804006 161.149838 
+L 126.68228 177.343219 
+L 133.560555 190.297924 
+L 140.438829 200.661687 
+L 147.317103 208.952698 
+L 154.195378 215.585507 
+L 161.073652 220.891754 
+L 167.951926 225.136752 
+L 174.8302 228.53275 
+L 181.708475 231.249548 
+L 188.586749 233.422987 
+L 195.465023 235.161738 
+L 202.343297 236.552739 
+L 209.221572 237.66554 
+L 216.099846 238.55578 
+L 222.97812 239.267973 
+L 229.856394 239.837727 
+L 236.734669 240.29353 
+L 243.612943 240.658172 
+L 250.491217 240.949886 
+L 257.369492 241.183257 
+L 264.247766 241.369954 
+L 271.12604 241.519312 
+L 278.004314 241.638798 
+L 284.882589 241.734387 
+L 291.760863 241.810858 
+L 298.639137 241.872035 
+L 305.517411 241.920976 
+L 312.395686 241.96013 
+L 319.27396 241.991452 
+L 326.152234 242.01651 
+L 333.030508 242.036557 
+L 339.908783 242.052594 
+L 346.787057 242.065423 
+L 353.665331 242.075687 
+L 360.543606 242.083898 
+L 367.42188 242.090467 
+L 374.300154 242.095722 
+L 381.178428 242.099926 
+L 388.056703 242.103289 
+L 394.934977 242.10598 
+L 401.813251 242.108132 
+L 408.691525 242.109854 
+L 415.5698 242.111232 
+L 422.448074 242.112334 
+L 429.326348 242.113216 
+L 436.204622 242.113921 
+L 443.082897 242.114485 
+L 449.961171 242.114937 
+L 456.839445 242.115298 
+L 463.71772 242.115587 
+L 470.595994 242.115818 
+L 477.474268 242.116003 
+L 484.352542 242.116151 
+L 491.230817 242.116269 
+L 498.109091 242.116364 
+" style="fill:none;stroke:#1f77b4;stroke-linecap:square;stroke-width:1.5;"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 72 252 
+L 72 34.56 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 518.4 252 
+L 518.4 34.56 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 72 252 
+L 518.4 252 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 72 34.56 
+L 518.4 34.56 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pea9fd7c97a">
+   <rect height="217.44" width="446.4" x="72" y="34.56"/>
+  </clipPath>
+ </defs>
+</svg>

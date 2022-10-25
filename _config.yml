@@ -1,34 +1,3 @@
-Skip to content
-Product
-Solutions
-Open Source
-Pricing
-Search
-Sign in
-Sign up
-kitian616
-/
-jekyll-TeXt-theme
-Public
-Code
-Issues
-113
-Pull requests
-36
-Actions
-Projects
-1
-Security
-Insights
-jekyll-TeXt-theme/_config.yml
-@kitian616
-kitian616 chore: add commitlint and editorconfig
-Latest commit 79b42a6 on 2 Feb 2020
- History
- 7 contributors
-@kitian616@HenryQW@ssosso@maddovr@lloyar@zerone01y@liao961120
-225 lines (178 sloc)  6.16 KB
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -48,15 +17,17 @@ Latest commit 79b42a6 on 2 Feb 2020
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Your Site Title
+title   : 奕的博客
 description: > # this means to ignore newlines until "Language & timezone"
   Your Site Description
+
+
 ## => Language and Timezone
 ##############################
-lang: # the language of your site, default as "en"
+lang: zh-CN
 timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
@@ -64,10 +35,10 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Your Name
+  name      : 奕
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
+  bio       : 初来乍到。
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -84,8 +55,8 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
-repository_tree: master
+repository: uncle-yi/uncle-yi.github.io
+repository_tree: main
 
 
 ## => Paths
@@ -113,14 +84,14 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
-chart: # false (default), true
+chart: true # false (default), true
 
 
 ## => Paginate
@@ -212,6 +183,13 @@ markdown    : kramdown
 highlighter : rouge
 permalink   : date
 
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
@@ -237,11 +215,12 @@ defaults:
     values:
       layout: article
       sharing: true
-      license: true
+      license: false
+      category: post
       aside:
         toc: true
-      show_edit_on_github: true
-      show_subscribe: true
+      show_edit_on_github: false
+      show_subscribe: false
       pageview: true
 
 
@@ -252,17 +231,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

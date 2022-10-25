@@ -16,6 +16,8 @@ tags: 实现 记录
 
 可以理解 DTW 为一个判断不同长的序列之间相似度的测量。DTW 的具体过程，可以查看这个视频：[DTW（动态时间规整）算法原理与应用_bilibili](https://www.bilibili.com/video/BV12r4y1A7mT?share_source=copy_web) ，应该是用中文解释的最好的视频了。这篇博客主要还是贴一下我的一个实现，以及整个过程中的一些困惑。
 
+<!--more-->
+
 ## 实现
 
 ```python
