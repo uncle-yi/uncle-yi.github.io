@@ -1,15 +1,11 @@
 @mixin horizontal-rules() {
-  // border-bottom: 1px dashed #8c8b8b;
-  border-bottom: 1px dashed $text-color-l;
-  &::after {
-    display: inline-block;
-    position: relative;
-    top: 21px;
-    left: 40px;
-    padding: 0 3px;
-    background: #ffffff;
+  &::before {
+    display: block;
+    font-size: map-get($base, font-size-h2);
     color: $text-color-l;
-    font-size: map-get($base, font-size-h3);
+    text-align: center;
+    letter-spacing: map-get($spacers, 4);
+    content: "...";
   }
 }
 
