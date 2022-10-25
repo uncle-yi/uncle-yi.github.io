@@ -1,3 +1,34 @@
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search
+Sign in
+Sign up
+kitian616
+/
+jekyll-TeXt-theme
+Public
+Code
+Issues
+113
+Pull requests
+36
+Actions
+Projects
+1
+Security
+Insights
+jekyll-TeXt-theme/_config.yml
+@kitian616
+kitian616 chore: add commitlint and editorconfig
+Latest commit 79b42a6 on 2 Feb 2020
+ History
+ 7 contributors
+@kitian616@HenryQW@ssosso@maddovr@lloyar@zerone01y@liao961120
+225 lines (178 sloc)  6.16 KB
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -23,8 +54,6 @@ baseurl : # does not include hostname
 title   : Your Site Title
 description: > # this means to ignore newlines until "Language & timezone"
   Your Site Description
-
-
 ## => Language and Timezone
 ##############################
 lang: # the language of your site, default as "en"
@@ -223,3 +252,17 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
