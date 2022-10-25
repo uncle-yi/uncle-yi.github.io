@@ -222,6 +222,11 @@ defaults:
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
+      lightbox: true
+      mathjax: true
+      mathjax_autoNumber: true
+      mermaid: true
+      chart: true
 
 
 ## => Plugins
