@@ -1,6 +1,11 @@
 ---
 title: 论文笔记：Behavioural plasticity and the transition to order in jackdaw flocks
-tags: Nature-Communication NC 论文 生物学 笔记
+tags: 
+- Nature Communication 
+- NC 
+- 论文 
+- 生物学 
+- 笔记
 ---
 
 ## 摘要
