@@ -34,13 +34,13 @@ tags:
    >
    > 图 1：S. Movie 1：其中一次迁徙追踪数据（S. 指 Supplementary，下文不再做注解）
 
-2. Mobbing flocks：模拟「scolding call」后的反捕食者的聚集过程（10次模拟，集群中个体数量从 4 到 120 不等）。
+2. Mobbing flocks：模拟「scolding call」（反捕食者召集呼喊）后的反捕食者的聚集过程（10次模拟，集群中个体数量从 4 到 120 不等）。
 
    > ![]({{ site.url }}\assets\images\2023-01-14\ezgif-1-5a3ded60c8.gif){:height="300px" .border} 
    >
    > 图 2：S. Movie 2：其中一次聚集追踪数据
 
-   Mobbing flocks 的数据是首先组装了一个狐狸标本叼着类似寒鸦的鸟，然后让假狐狸突然出现的同时播放寒鸦的「scolding call」（反捕食者召集呼喊）音频，从而迫使寒鸦形成聚集行为而得到的。
+   Mobbing flocks 的数据是首先组装了一个狐狸标本叼着类似寒鸦的鸟，然后让假狐狸突然出现的同时播放寒鸦的「scolding call」音频，从而迫使寒鸦形成聚集行为而得到的。
 
    > ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_12-59-42.png){:height="300px" .border} 
    >
@@ -50,11 +50,11 @@ tags:
 
 对于 mobbing flocks，统计了在 topological rank 不变的情况下，对齐角度和欧氏距离的变化曲线（图 4i.）可以看到多个 topological rank 值对应的曲线几乎重叠，且角度都随距离平滑上升，曲线角度明显。这证明在 mobbing flocks 中 interaction 更倾向于 metric-based。有争议的点在于，观察集群模拟数据的轨迹，普遍认知可能是鸟群会围绕捕食者做圆周运动环绕飞行，这样即使没有交互，随着物理规律，距离大的个体就是会更不倾向于对齐。但是作者对 mobbing 的俯视角数据（图 4iii.）做了 probability density function 统计（图 4ii.），显示出鸟其实更倾向于通过捕食者的正上方点来回飞行，这就与“围绕捕食者做圆周运动”的假设相违背了。
 
-> ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_15-12-26.png){:height="300px" .border} 
+> ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_15-12-26.png){:height="240px" .border} 
 >
 > 图 4（原文图 1c，S.1c，S.1b 重排）：Mobbing flocks 的 metric based interaction 证明
 
-Transit flocks，相较于 mobbing flocks，$\theta$ 函数的曲线就没有反映出明显的上升趋势（图 4i.），这就说明起码相对于另一种 context 下的交互，起码迁徙中的寒鸦鸟群的交互是不那么基于欧氏距离的。不过在迁徙数据中，能得到较显著的速度波动（velocity fluctuation，图 5，「这似乎是流体力学的研究范畴，文中也没解释是怎么计算到的波动」）。作者倾向于相信这些速度波动是个体之间的 interaction 导致的。而这个数据反映的无关 $n$ 与 $r$ 的强对齐的结果则是「外界因素 + 个体交互」的结果。
+Transit flocks，相较于 mobbing flocks，$\theta$ 函数的曲线就没有反映出明显的上升趋势（图 4i.），这就说明起码相对于另一种 context 下的交互，起码迁徙中的寒鸦鸟群的交互是不那么基于欧氏距离的。不过在迁徙数据中，能得到较显著的速度波动（velocity fluctuation，图 5，「这似乎是流体力学的研究范畴，文中也没解释是怎么计算到的波动」）。作者倾向于相信这些速度波动是个体之间的 interaction 导致的。而这个数据反映的强对齐（strong alignment，总速度方向几乎全体一致）的结果则是「外界因素 + 个体交互」的结果。
 
 > ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_16-22-59.png){:height="300px" .border} 
 >
