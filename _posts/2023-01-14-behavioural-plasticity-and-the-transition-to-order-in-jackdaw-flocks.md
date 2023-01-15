@@ -8,6 +8,8 @@ tags:
 - 笔记
 ---
 
+> 原文：Behavioural plasticity and the transition to order in jackdaw flocks
+
 ## 摘要
 
 集体行为通常被认为是个体遵守特定规则的总和。本文的主要结论就是寒鸦在不同 context（环境、密度等外界条件）的情况下会改变交互策略（在欧氏空间或拓扑空间上）。随着集群密度增加，鸟群呈现了从无序到有序的急剧转变。这篇文章在方法上使用了 self-propelled particle model，这也将是我后续阅读的重点。
@@ -42,7 +44,7 @@ tags:
 
    Mobbing flocks 的数据是首先组装了一个狐狸标本叼着类似寒鸦的鸟，然后让假狐狸突然出现的同时播放寒鸦的「scolding call」音频，从而迫使寒鸦形成聚集行为而得到的。
 
-   > ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_12-59-42.png){:height="300px" .border} 
+   > ![]({{ site.url }}\assets\images\2023-01-14\Snipaste_2023-01-14_12-59-42.png){:height="240px" .border} 
    >
    > 图 3（原文图 1a，1b）：迁徙数据和聚集数据示例
 

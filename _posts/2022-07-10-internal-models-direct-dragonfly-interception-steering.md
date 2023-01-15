@@ -3,6 +3,8 @@ title: 论文笔记：Internal models direct dragonfly interception steering
 tags: Nature 论文 生物学 笔记
 ---
 
+> 原文：Internal models direct dragonfly interception steering
+
 ## 摘要
 
 目标：研究蜻蜓在捕捉猎物时，internal models 的作用会到什么程度。
