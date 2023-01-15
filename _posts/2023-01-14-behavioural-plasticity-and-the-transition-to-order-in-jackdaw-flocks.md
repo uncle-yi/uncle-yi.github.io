@@ -34,13 +34,13 @@ tags:
 1. Transit flocks：冬季傍晚，寒鸦形成大型迁徙鸟群返回栖息地（6次迁徙，集群中个体数量从 25 到 330 不等）；
    > ![]({{ site.url }}\assets\images\2023-01-14\ezgif-3-f2e7912c36.gif){:height="300px" .border}
    >
-   > 图 1：S. Movie 1：其中一次迁徙追踪数据（S. 指 Supplementary，下文不再做注解）
+   > 图 1（原文 S. Movie 1）：其中一次迁徙追踪数据（S. 指 Supplementary，下文不再做注解）
 
 2. Mobbing flocks：模拟「scolding call」（反捕食者召集呼喊）后的反捕食者的聚集过程（10次模拟，集群中个体数量从 4 到 120 不等）。
 
    > ![]({{ site.url }}\assets\images\2023-01-14\ezgif-1-5a3ded60c8.gif){:height="300px" .border} 
    >
-   > 图 2：S. Movie 2：其中一次聚集追踪数据
+   > 图 2（原文 S. Movie 2）：其中一次聚集追踪数据
 
    Mobbing flocks 的数据是首先组装了一个狐狸标本叼着类似寒鸦的鸟，然后让假狐狸突然出现的同时播放寒鸦的「scolding call」音频，从而迫使寒鸦形成聚集行为而得到的。
 
