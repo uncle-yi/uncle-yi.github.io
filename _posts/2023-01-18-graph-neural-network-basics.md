@@ -76,22 +76,11 @@ end
 
 ## 图的数学表示
 
-<table align="center" markdown="1">
-<tr><th>无向 & 无权图<br/>（Un-Weighted & Undirected Graph）</th><th>无向 & 有权图<br/>（Weighted & Undirected Graph）</th></tr>
-<tr><td>
+| 无向 & 无权图<br/>（Un-Weighted & Undirected Graph）         | 无向 & 有权图<br/>（Weighted & Undirected Graph）            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| {::nomarkdown}<table>  <tr>    <th>Company</th>    <th>Contact</th>    <th>Country</th>  </tr>  <tr>    <td>Alfreds Futterkiste</td>    <td>Maria Anders</td>    <td>Germany</td>  </tr>  <tr>    <td>Centro comercial Moctezuma</td>    <td>Francisco Chang</td>    <td>Mexico</td>  </tr></table>{:/} | <table>  <tr>    <th>Company</th>    <th>Contact</th>    <th>Country</th>  </tr>  <tr>    <td>Alfreds Futterkiste</td>    <td>Maria Anders</td>    <td>Germany</td>  </tr>  <tr>    <td>Centro comercial Moctezuma</td>    <td>Francisco Chang</td>    <td>Mexico</td>  </tr></table> |
 
-| 节点的集合                                    | 边的集合                                                     | 边的集合（另一种格式）                                       || --------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ || $V=\{$<br/>$A, B, $<br/>$C, D, $<br/>$E, F\}$ | $E=\{$<br/>$AB, AC,$ <br/>$BD, CE,$ <br/>$CF, DF,$ <br/>$EF\}$ | $E=\{$<br/>$(A,B),(A,C),$ <br/>$(B,D),(C,E),$ <br/>$(C,F),(D,F),$ <br/>$(E,F)\}$ |
 
-</td><td>
-
-|b|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
-
-</td></tr> </table>
-
-|      |      |
-| ---- | ---- |
 
 ```mermaid
 flowchart TB
