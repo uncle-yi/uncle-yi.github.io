@@ -11,7 +11,7 @@ tags: 图神经网络 GNN 机器学习 记录
 ```mermaid
 flowchart TB
 
-subgraph Undirected & Weighted
+subgraph "无向 & 有权图"
 R1(( ))
 R2(( ))
 R3(( ))
@@ -25,7 +25,7 @@ R3--4---R4
 R3--3---R5
 end
 
-subgraph Undirected & Unweighted
+subgraph "无向 & 无权图"
 L1(( ))
 L2(( ))
 L3(( ))
@@ -43,7 +43,7 @@ end
 ```mermaid
 flowchart TB
 
-subgraph Directed & Weighted
+subgraph "有向 & 有权图<"
 R1(( ))
 R2(( ))
 R3(( ))
@@ -57,7 +57,7 @@ R3--4-->R4
 R3--3-->R5
 end
 
-subgraph Directed & Unweighted
+subgraph "有向 & 无权图"
 L1(( ))
 L2(( ))
 L3(( ))
@@ -76,16 +76,10 @@ end
 
 ## 图的数学表示
 
-| 无向 & 无权图<br/>（Un-Weighted & Undirected Graph）         | 无向 & 有权图<br/>（Weighted & Undirected Graph）            |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| {::nomarkdown}<table>  <tr>    <th>Company</th>    <th>Contact</th>    <th>Country</th>  </tr>  <tr>    <td>Alfreds Futterkiste</td>    <td>Maria Anders</td>    <td>Germany</td>  </tr>  <tr>    <td>Centro comercial Moctezuma</td>    <td>Francisco Chang</td>    <td>Mexico</td>  </tr></table>{:/} | <table>  <tr>    <th>Company</th>    <th>Contact</th>    <th>Country</th>  </tr>  <tr>    <td>Alfreds Futterkiste</td>    <td>Maria Anders</td>    <td>Germany</td>  </tr>  <tr>    <td>Centro comercial Moctezuma</td>    <td>Francisco Chang</td>    <td>Mexico</td>  </tr></table> |
-
-
-
 ```mermaid
 flowchart TB
 
-subgraph Weighted & Undirected
+subgraph  
 A2(("A"))
 B2(("B"))
 C2(("C"))
@@ -101,24 +95,26 @@ B2--8---D2
 E2--12---F2
 end
 
-subgraph Un-Weighted & Undirected 
+subgraph  
 A1(("A"))
 B1(("B"))
 C1(("C"))
 D1(("D"))
 E1(("E"))
 F1(("F"))
-A1---B1
-A1---C1
-C1---E1
-C1---F1
-D1---F1
-B1---D1
-E1---F1
+A1--"·"---B1
+A1--"·"---C1
+C1--"·"---E1
+C1--"·"---F1
+D1--"·"---F1
+B1--"·"---D1
+E1--"·"---F1
 end
 ```
 
-| 节点的集合：<br>$V=\{A, B, C, D, E, F\}$                     | 节点的集合：<br>$V=\{A, B, C, D, E, F\}$|| ------------------------------------------------------------ | ------------------------------------------------------------ || **边的集合：**<br/>$E=\{AB, AC, BD, CE, CF, DF, EF\}$<br/>$E=\{(A,B), (A,C), (B,D), (C,E),$<br/> $(C,F), (D,F), (E,F)\}$ | **边的集合：**<br/>$E=\{AB, AC, BD, CE, CF, DF, EF\}$<br/>$E=\{(A,B,12), (A,C,10), (B,D,8),$<br>$ (C,E,15), (C,F,1), (D,F,7), (E,F,12)\}$ |
+| 无向 & 无权图<br/>（Un-Weighted & Undirected Graph）         | 无向 & 有权图<br/>（Weighted & Undirected Graph）            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>    </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B),(A,C),(B,D),(C,E),(C,F),(D,F),(E,F)}</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>  </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B,12), (A,C,10), (B,D,8), (C,E,15), (C,F,1), (D,F,7), (E,F,12)}</td>  </tr>  </table>{:/} |
 
 邻居（Neighbors）：有边相连的两个节点互为邻居。例：B 和 C 是 A 的所有邻居。
 
@@ -156,15 +152,15 @@ C1(("C"));
 D1(("D"));
 E1(("E"));
 F1(("F"));
-A1-->B1;
-A1-->C1;
-C1-->E1;
-D1-->F1;
-C1-->F1;
-B1-->D1;
-E1-->F1;
-E1-->A1;
-B1-->A1;
+A1--"·"-->B1;
+A1--"·"-->C1;
+C1--"·"-->E1;
+D1--"·"-->F1;
+C1--"·"-->F1;
+B1--"·"-->D1;
+E1--"·"-->F1;
+E1--"·"-->A1;
+B1--"·"-->A1;
 end
 ```
 
