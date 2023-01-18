@@ -9,41 +9,40 @@ tags: 图神经网络 GNN 机器学习 记录
 <!--more-->
 
 ```mermaid
-flowchart TB
+graph TB
 
 subgraph Undirected & Weighted
-R1(( ))
-R2(( ))
-R3(( ))
-R4(( ))
-R5(( ))
+R1(( ));
+R2(( ));
+R3(( ));
+R4(( ));
+R5(( ));
 
-R1--5---R2
-R1--7---R3
-R2--12---R3
-R3--4---R4
-R3--3---R5
+R1--5---R2;
+R1--7---R3;
+R2--12---R3;
+R3--4---R4;
+R3--3---R5;
 end
 
 subgraph Undirected & Unweighted
-L1(( ))
-L2(( ))
-L3(( ))
-L4(( ))
-L5(( ))
+L1(( ));
+L2(( ));
+L3(( ));
+L4(( ));
+L5(( ));
 
-L1---L2
-L1---L3
-L2---L3
-L3---L4
-L3---L5
+L1---L2;
+L1---L3;
+L2---L3;
+L3---L4;
+L3---L5;
 end
 ```
 
 ```mermaid
 flowchart TB
 
-subgraph Directed & Weighted
 R1(( ))
 R2(( ))
 R3(( ))
@@ -55,21 +54,6 @@ R1--7-->R3
 R2--12-->R3
 R3--4-->R4
 R3--3-->R5
-end
-
-subgraph Directed & Unweighted
-L1(( ))
-L2(( ))
-L3(( ))
-L4(( ))
-L5(( ))
-
-L1-->L2
-L1-->L3
-L2-->L3
-L3-->L4
-L3-->L5
-end
 ```
 
 > 一个全连接图意味着如果是无向图则图中所有的节点之间都有一个边连接。如果是有向图，则总是存在一个边，这个边的两头为任意节点。
@@ -80,7 +64,7 @@ end
 | --------------------------------------------------- | ------------------------------------------------ |
 
 ```mermaid
-flowchart TB
+graph TB
 
 subgraph Weighted & Undirected
 A2(("A"))
@@ -126,8 +110,9 @@ end
 | 有向 & 无权图<br>（Directed & Un-weighted） | 有向 & 有权图<br/>（Directed & Weighed） |
 | -------------------- | ------------------------ |
 |<占位符>|<占位符>|
+
 ```mermaid
-flowchart TB
+graph TB
 
 subgraph Directed & Weighed 
 A2(("A"));
@@ -165,6 +150,7 @@ E1-->A1;
 B1-->A1;
 end
 ```
+
 | Node1 | Node2 |<占位符>| Node1 | Node2 |Weight|
 | ----- | ----- |-------| ----- | ----- | ------ |
 |   A   |   B   |<占位符>|   A   |   B   |   12   |
