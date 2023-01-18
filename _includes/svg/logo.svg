@@ -1,8 +1,19 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24">
-<style type="text/css">
-	.st0{fill:#515151;}
-</style>
-<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
-	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+<svg width="30.000000000000004" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" stroke-width="0" id="svg_37">
+   <ellipse stroke="#000" ry="13.75191" rx="13.75191" id="svg_36" cy="15" cx="15" fill="#191919"/>
+   <ellipse stroke="#000" ry="2.34664" rx="10.21645" id="svg_31" cy="17.8899" cx="15.23811" fill="#e5e5e5"/>
+   <ellipse stroke="#000" ry="1.26206" rx="5.49456" id="svg_32" cy="18.00725" cx="15.23811" fill="#7f7f7f"/>
+   <ellipse stroke="#000000" ry="1.43087" rx="2.91898" id="svg_29" cy="14.4558" cx="19.10147" fill="#e5e5e5"/>
+   <ellipse stroke="#000000" ry="0.83666" rx="2.11232" id="svg_30" cy="14.64577" cx="19.21247" fill="#191919"/>
+   <ellipse stroke="#000" ry="1.34502" rx="4.46433" id="svg_33" cy="17.63234" cx="11.83262" fill="#000000"/>
+   <ellipse stroke="#000" ry="5.69488" rx="5.26562" id="svg_27" cy="12.88184" cx="14.86608" fill="#cccccc"/>
+   <rect stroke="#191919" id="svg_28" height="6.75373" width="15.91133" y="5.01202" x="6.91041" fill="#191919"/>
+   <ellipse stroke="#000" ry="1.27106" rx="5.15115" id="svg_21" cy="11.94935" cx="14.86608" fill="#ffffff"/>
+   <ellipse stroke="#000" ry="1.08747" rx="4.4071" id="svg_18" cy="12.10916" cx="14.80884" fill="#bf5f00"/>
+   <ellipse stroke="#ffd4aa" ry="0.6582" rx="2.83313" id="svg_34" cy="12.30948" cx="15.81046" fill="#ffaa56"/>
+  </g>
+ </g>
 </svg>

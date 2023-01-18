@@ -9,7 +9,7 @@ tags: 图神经网络 GNN 机器学习 记录
 <!--more-->
 
 ```mermaid
-flowchart TB
+graph TB
 
 subgraph Undirected & Weighted
 R1(( ));

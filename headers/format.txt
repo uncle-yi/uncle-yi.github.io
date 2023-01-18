@@ -1,0 +1,4 @@
+article_header:
+  type: cover
+  image:
+    src: /headers//
