@@ -92,9 +92,7 @@
         }
         display: none;
         &[data-processed] {
-          // display: block;
-          display: grid;
-          justify-content: center;
+          display: block;
         }
       }
     }
