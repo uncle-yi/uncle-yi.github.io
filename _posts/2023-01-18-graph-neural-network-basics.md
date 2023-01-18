@@ -102,13 +102,13 @@ C1(("C"))
 D1(("D"))
 E1(("E"))
 F1(("F"))
-A1--"·"---B1
-A1--"·"---C1
-C1--"·"---E1
-C1--"·"---F1
-D1--"·"---F1
-B1--"·"---D1
-E1--"·"---F1
+A1---B1
+A1---C1
+C1---E1
+C1---F1
+D1---F1
+B1---D1
+E1---F1
 end
 ```
 
@@ -120,14 +120,10 @@ end
 
 ### 边列表（Edge list）
 
-| 有向 & 无权图<br>（Directed & Un-weighted） | 有向 & 有权图<br/>（Directed & Weighed） |
-| -------------------- | ------------------------ |
-|<占位符>|<占位符>|
-
 ```mermaid
 flowchart TB
 
-subgraph Directed & Weighed 
+subgraph  
 A2(("A"));
 B2(("B"));
 C2(("C"));
@@ -145,24 +141,27 @@ E2--23-->A2;
 B2--34-->A2;
 end
 
-subgraph Directed & Un-weighted
+subgraph  
 A1(("A"));
 B1(("B"));
 C1(("C"));
 D1(("D"));
 E1(("E"));
 F1(("F"));
-A1--"·"-->B1;
-A1--"·"-->C1;
-C1--"·"-->E1;
-D1--"·"-->F1;
-C1--"·"-->F1;
-B1--"·"-->D1;
-E1--"·"-->F1;
-E1--"·"-->A1;
-B1--"·"-->A1;
+A1-->B1;
+A1-->C1;
+C1-->E1;
+D1-->F1;
+C1-->F1;
+B1-->D1;
+E1-->F1;
+E1-->A1;
+B1-->A1;
 end
 ```
+| 有向 & 无权图<br>（Directed & Un-weighted） | 有向 & 有权图<br/>（Directed & Weighed） |
+| -------------------- | ------------------------ |
+|{::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/}|{::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/}|
 
 | Node1 | Node2 |<占位符>| Node1 | Node2 |Weight|
 | ----- | ----- |-------| ----- | ----- | ------ |
