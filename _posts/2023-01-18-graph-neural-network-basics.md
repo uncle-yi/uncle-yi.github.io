@@ -269,12 +269,14 @@ end
 
 | 无向图                                                       | 有向图                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\ \rm A & 1 & 1 & 0 & 0 & 0 & 0 & 0\\ \rm B & 1 & 0 & 0 & 0 & 0 & 1 & 0\\ \rm C & 0 & 1 & 1 & 0 & 1 & 0 & 0\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & 1\\ \rm E & 0 & 0 & 1 & 1 & 0 & 0 & 0\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\ \rm A & -1 & -1 & 0 & 0 & 0 & 0 & 0\\ \rm B & 1 & 0 & 0 & 0 & 0 & -1 & 0\\ \rm C & 0 & 1 & -1 & 0 & -1 & 0 & 0\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & -1\\ \rm E & 0 & 0 & 1 & -1 & 0 & 0 & 0\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\ \end{pmatrix}$ |
+| $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & 1 & 1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & 1 & 0\\\\ \rm C & 0 & 1 & 1 & 0 & 1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & 1\\\\ \rm E & 0 & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & -1 & -1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & -1 & 0\\\\ \rm C & 0 & 1 & -1 & 0 & -1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & -1\\\\ \rm E & 0 & 0 & 1 & -1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{pmatrix}$ |
 | 如果节点和边相连，则值为 1，否则为 0。节点由行表示，而边相反。 | 如果节点和边相连，根据边的方向，值取 -1/1，不相连则取 0。节点由行表示，而边相反。 |
 
 ### 度矩阵（Degree Matrix）
 
 如果不区分入度和出度的话，任意有向图的度矩阵和将它的边的方向删掉得到的无向图的度矩阵是一样的。
+
+<div align="center" markdown="1">
 
 ```mermaid
 flowchart LR
@@ -294,6 +296,8 @@ E---F
 B---B
 F---F
 ```
+
+</div>
 
 $$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\ \end{pmatrix}$$
 
@@ -305,6 +309,8 @@ $$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 
 - $L=Degree Matrix - Adjacency Matrix$
 - $L=\{D-A\}$
 
+<div align="center" markdown="1">
+
 ```mermaid
 flowchart LR
 A(("A"))
@@ -323,6 +329,8 @@ E---F
 B---B
 F---F
 ```
+
+</div>
 
 $D(Degree\ Matrix):$
 
