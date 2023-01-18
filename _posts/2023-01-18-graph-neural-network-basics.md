@@ -159,9 +159,12 @@ E1-->A1;
 B1-->A1;
 end
 ```
-| 有向 & 无权图<br>（Directed & Un-weighted） | 有向 & 有权图<br/>（Directed & Weighed） |
-| -------------------- | ------------------------ |
-|{::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/}|{::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/}|
+
+| 有向 & 无权图<br>（Directed & Un-weighted）                  | 有向 & 有权图<br/>（Directed & Weighed）                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 更多操作{::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
+
+
 
 | Node1 | Node2 |<占位符>| Node1 | Node2 |Weight|
 | ----- | ----- |-------| ----- | ----- | ------ |
