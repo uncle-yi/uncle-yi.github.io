@@ -76,7 +76,7 @@ end
 
 ## 图的数学表示
 
-<table>
+<table align="center" markdown="1">
 <tr><th>无向 & 无权图<br/>（Un-Weighted & Undirected Graph）</th><th>无向 & 有权图<br/>（Weighted & Undirected Graph）</th></tr>
 <tr><td>
 
@@ -96,7 +96,7 @@ end
 | ---- | ---- |
 
 ```mermaid
-graph TB
+flowchart TB
 
 subgraph Weighted & Undirected
 A2(("A"))
@@ -144,7 +144,7 @@ end
 |<占位符>|<占位符>|
 
 ```mermaid
-graph TB
+flowchart TB
 
 subgraph Directed & Weighed 
 A2(("A"));
