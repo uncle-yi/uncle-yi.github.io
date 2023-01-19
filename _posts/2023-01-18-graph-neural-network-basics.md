@@ -164,6 +164,52 @@ end
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
 
+
+
+<table align="center" markdown="1">  <tr>    <th>有向 & 无权图<br>（Directed & Un-weighted）</th>    <th>有向 & 有权图<br/>（Directed & Weighed）</th>    </tr>  <tr>  
+    <td>
+        ```mermaid
+        flowchart TB
+        A2(("A"));
+        B2(("B"));
+        C2(("C"));
+        D2(("D"));
+        E2(("E"));
+        F2(("F"));
+        A2--12-->B2;
+        A2--10-->C2;
+        C2--15-->E2;
+        D2--7-->F2;
+        C2--1-->F2;
+        B2--8-->D2;
+        E2--12-->F2;
+        E2--23-->A2;
+        B2--34-->A2;
+        ```
+ 	</td>  
+    <td>
+    	```mermaid
+    	flowchart TB
+        A1(("A"));
+        B1(("B"));
+        C1(("C"));
+        D1(("D"));
+        E1(("E"));
+        F1(("F"));
+        A1-->B1;
+        A1-->C1;
+        C1-->E1;
+        D1-->F1;
+        C1-->F1;
+        B1-->D1;
+        E1-->F1;
+        E1-->A1;
+        B1-->A1;
+        ```
+    </td>  
+    </tr>  
+</table>
+
 ### 邻接矩阵（Adjacency matrix）
 
 - 邻接矩阵是一个 2D 正方形矩阵；
@@ -264,8 +310,6 @@ end
 | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & F & T & T & F & F & F\\ \rm B & F & F & F & T & F & F \\ \rm C & F & F & F & F & T & T\\ \rm D & F & F & F & F & F & T\\ \rm E & F & F & F & F & F & T\\ \rm F & F & F & F & F & F & F\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\ \rm B & 34 & -1 & -1 & 8 & -1 & -1 \\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\ \rm E & 23 & -1 & -1 & -1 & -1 & 12\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\ \end{pmatrix}$ |
 
 ### 关联矩阵（Incidence matrix）
-
-- Nodes N/Edge M - Undirected Graph
 
 | 无向图                                                       | 有向图                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
