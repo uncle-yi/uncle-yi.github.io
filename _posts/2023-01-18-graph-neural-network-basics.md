@@ -8,6 +8,8 @@ tags: 图神经网络 GNN 机器学习 记录
 
 <!--more-->
 
+<div align="center" markdown="1">
+
 ```mermaid
 flowchart TB
 
@@ -72,9 +74,13 @@ L3-->L5
 end
 ```
 
+</div>
+
 > 一个全连接图意味着如果是无向图则图中所有的节点之间都有一个边连接。如果是有向图，则总是存在一个边，这个边的两头为任意节点。
 
 ## 图的数学表示
+
+<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -116,9 +122,13 @@ end
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>    </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B),(A,C),(B,D),(C,E),(C,F),(D,F),(E,F)}</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>  </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B,12), (A,C,10), (B,D,8), (C,E,15), (C,F,1), (D,F,7), (E,F,12)}</td>  </tr>  </table>{:/} |
 
+</div>
+
 邻居（Neighbors）：有边相连的两个节点互为邻居。例：B 和 C 是 A 的所有邻居。
 
 ### 边列表（Edge list）
+
+<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -164,54 +174,7 @@ end
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
 
-
-
-<div align="center" markdown="1">
-<table align="center" markdown="1">  
-<tr><th>有向 & 无权图<br>（Directed & Un-weighted）</th>
-<th>有向 & 有权图<br/>（Directed & Weighed）</th>
-</tr>  
-<tr>  <td markdown="1">
-```mermaid<br/>
-flowchart TB<br/>
-A2(("A"));<br/>
-B2(("B"));<br/>
-C2(("C"));<br/>
-D2(("D"));<br/>
-E2(("E"));<br/>
-F2(("F"));<br/>
-A2--12-->B2;<br/>
-A2--10-->C2;<br/>
-C2--15-->E2;<br/>
-D2--7-->F2;<br/>
-C2--1-->F2;<br/>
-B2--8-->D2;<br/>
-E2--12-->F2;<br/>
-E2--23-->A2;<br/>
-B2--34-->A2;<br/>
-```</td>  
-<td markdown="1">```mermaid<br/>
-flowchart TB<br/>
-A1(("A"));<br/>
-B1(("B"));<br/>
-C1(("C"));<br/>
-D1(("D"));<br/>
-E1(("E"));<br/>
-F1(("F"));<br/>
-A1-->B1;<br/>
-A1-->C1;<br/>
-C1-->E1;<br/>
-D1-->F1;<br/>
-C1-->F1;<br/>
-B1-->D1;<br/>
-E1-->F1;<br/>
-E1-->A1;<br/>
-B1-->A1;<br/>
-```</td>  
-</tr>  
-</table>
 </div>
-hope this works.
 
 ### 邻接矩阵（Adjacency matrix）
 
@@ -225,6 +188,8 @@ hope this works.
 
 
 - 一般表示为：$A=N\times N$
+
+<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -268,7 +233,11 @@ end
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\ \rm B & -1 & -1 & -1 & 8 & -1 & -1 \\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\ \rm E & -1 & -1 & -1 & -1 & -1 & 12\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & F & T & T & F & F & F\\ \rm B & T & F & F & T & F & F \\ \rm C & F & F & F & F & T & T\\ \rm D & F & F & F & F & F & T\\ \rm E & T & F & F & F & F & T\\ \rm F & F & F & F & F & F & F\\ \end{pmatrix}$ |
 
+</div>
+
 > 严格意义上无向图的邻接矩阵应该是对称矩阵，但是有些时候为了方便存储或是其他原因，可能会表示为三角矩阵。
+
+<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -307,6 +276,8 @@ B2---D2
 E2---F2
 end
 ```
+
+</div>
 
 | 无向 & 无权图                                                | 有向 & 有权图                                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
