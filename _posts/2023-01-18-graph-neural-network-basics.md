@@ -167,7 +167,7 @@ end
 
 
 <div align="center" markdown="1">
-<table markdown="1">  
+<table align="center" markdown="1">  
 <tr><th>有向 & 无权图<br>（Directed & Un-weighted）</th>
 <th>有向 & 有权图<br/>（Directed & Weighed）</th>
 </tr>  
