@@ -167,53 +167,49 @@ end
 
 
 <div align="center" markdown="1">
-    <table>  
-        <tr>
-            <th>有向 & 无权图<br>（Directed & Un-weighted）</th>    			 <th>有向 & 有权图<br/>（Directed & Weighed）</th>
-        </tr>  
-        <tr>  
-            <td>
-                ```mermaid<br/>
-                flowchart TB<br/>
-                A2(("A"));<br/>
-                B2(("B"));<br/>
-                C2(("C"));<br/>
-                D2(("D"));<br/>
-                E2(("E"));<br/>
-                F2(("F"));<br/>
-                A2--12-->B2;<br/>
-                A2--10-->C2;<br/>
-                C2--15-->E2;<br/>
-                D2--7-->F2;<br/>
-                C2--1-->F2;<br/>
-                B2--8-->D2;<br/>
-                E2--12-->F2;<br/>
-                E2--23-->A2;<br/>
-                B2--34-->A2;<br/>
-                ```
-        	</td>  
-            <td>
-                ```mermaid<br/>
-                flowchart TB<br/>
-                A1(("A"));<br/>
-                B1(("B"));<br/>
-                C1(("C"));<br/>
-                D1(("D"));<br/>
-                E1(("E"));<br/>
-                F1(("F"));<br/>
-                A1-->B1;<br/>
-                A1-->C1;<br/>
-                C1-->E1;<br/>
-                D1-->F1;<br/>
-                C1-->F1;<br/>
-                B1-->D1;<br/>
-                E1-->F1;<br/>
-                E1-->A1;<br/>
-                B1-->A1;<br/>
-                ```
-            </td>  
-        </tr>  
-    </table>
+<table markdown="1">  
+<tr><th>有向 & 无权图<br>（Directed & Un-weighted）</th>
+<th>有向 & 有权图<br/>（Directed & Weighed）</th>
+</tr>  
+<tr>  <td>
+```mermaid<br/>
+flowchart TB<br/>
+A2(("A"));<br/>
+B2(("B"));<br/>
+C2(("C"));<br/>
+D2(("D"));<br/>
+E2(("E"));<br/>
+F2(("F"));<br/>
+A2--12-->B2;<br/>
+A2--10-->C2;<br/>
+C2--15-->E2;<br/>
+D2--7-->F2;<br/>
+C2--1-->F2;<br/>
+B2--8-->D2;<br/>
+E2--12-->F2;<br/>
+E2--23-->A2;<br/>
+B2--34-->A2;<br/>
+```</td>  
+<td>```mermaid<br/>
+flowchart TB<br/>
+A1(("A"));<br/>
+B1(("B"));<br/>
+C1(("C"));<br/>
+D1(("D"));<br/>
+E1(("E"));<br/>
+F1(("F"));<br/>
+A1-->B1;<br/>
+A1-->C1;<br/>
+C1-->E1;<br/>
+D1-->F1;<br/>
+C1-->F1;<br/>
+B1-->D1;<br/>
+E1-->F1;<br/>
+E1-->A1;<br/>
+B1-->A1;<br/>
+```</td>  
+</tr>  
+</table>
 </div>
 hope this works.
 
