@@ -171,7 +171,7 @@ end
 <tr><th>有向 & 无权图<br>（Directed & Un-weighted）</th>
 <th>有向 & 有权图<br/>（Directed & Weighed）</th>
 </tr>  
-<tr>  <td>
+<tr>  <td markdown="1">
 ```mermaid<br/>
 flowchart TB<br/>
 A2(("A"));<br/>
@@ -190,7 +190,7 @@ E2--12-->F2;<br/>
 E2--23-->A2;<br/>
 B2--34-->A2;<br/>
 ```</td>  
-<td>```mermaid<br/>
+<td markdown="1">```mermaid<br/>
 flowchart TB<br/>
 A1(("A"));<br/>
 B1(("B"));<br/>
