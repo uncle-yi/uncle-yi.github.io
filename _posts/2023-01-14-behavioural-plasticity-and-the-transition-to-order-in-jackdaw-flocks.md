@@ -8,7 +8,7 @@ tags:
 - 笔记
 ---
 
-> **「原文」**Behavioural plasticity and the transition to order in jackdaw flocks
+> **「原文」**Behavioural plasticity and the transition to order in jackdaw flocks<br/>
 > **「作者」**Hangjian Ling, Guillam E. Mclvor, Joseph Westley, Kasper van der Vaart, Richard T. Vaughan, Alex Thornton & Nicholas T. Ouellette
 
 ## 摘要
