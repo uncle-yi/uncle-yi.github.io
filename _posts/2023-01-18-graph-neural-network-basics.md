@@ -128,7 +128,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 ```
 
 | 无向 & 无权图<br/>（左图，Un-Weighted & Undirected Graph）   | 无向 & 有权图<br/>（右图，Weighted & Undirected Graph）      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>    </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B),(A,C),(B,D),(C,E),(C,F),(D,F),(E,F)}</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>  </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B,12), (A,C,10), (B,D,8), (C,E,15), (C,F,1), (D,F,7), (E,F,12)}</td>  </tr>  </table>{:/} |
 
 </div>
@@ -183,7 +183,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 ```
 
 | 有向 & 无权图<br>（左图，Directed & Un-weighted）            | 有向 & 有权图<br/>（右图，Directed & Weighed）               |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
 
 </div>
@@ -241,8 +241,8 @@ classDef noback fill:#fff0, stroke:#fff0;
 ```
 
 | 无向 & 有权图（左图）                                        | 有向 & 无权图（右图）                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & -1 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & -1 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & T & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & T & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{matrix}$ |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>-1</td><td>12</td><td>10</td><td>-1</td><td>-1</td><td>-1</td></tr><tr><td>B</td><td>-1</td><td>-1</td><td>-1</td><td>8</td><td>-1</td><td>-1</td></tr><tr><td>C</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>15</td><td>1</td></tr><tr><td>D</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>7</td></tr><tr><td>E</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>12</td></tr><tr><td>F</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td></tr></tbody></table>{:/} | {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>F</td><td>T</td><td>T</td><td>F</td><td>F</td><td>F</td></tr><tr><td>B</td><td>T</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td></tr><tr><td>C</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td><td>T</td></tr><tr><td>D</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>E</td><td>T</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td></tr></tbody></table>{:/} |
 
 </div>
 
