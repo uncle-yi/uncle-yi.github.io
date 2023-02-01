@@ -8,8 +8,6 @@ tags: 图神经网络 GNN 机器学习 记录
 
 <!--more-->
 
-<div align="center" markdown="1">
-
 ```mermaid
 flowchart TB
 
@@ -80,13 +78,9 @@ class s1,s2 noback;
 classDef noback fill:#fff0, stroke:#fff0;
 ```
 
-</div>
-
 > 一个全连接图意味着如果是无向图则图中所有的节点之间都有一个边连接。如果是有向图，则总是存在一个边，这个边的两头为任意节点。
 
 ## 图的数学表示
-
-<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -131,13 +125,9 @@ classDef noback fill:#fff0, stroke:#fff0;
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>    </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B),(A,C),(B,D),(C,E),(C,F),(D,F),(E,F)}</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>  </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B,12), (A,C,10), (B,D,8), (C,E,15), (C,F,1), (D,F,7), (E,F,12)}</td>  </tr>  </table>{:/} |
 
-</div>
-
 邻居（Neighbors）：有边相连的两个节点互为邻居。例：B 和 C 是 A 的所有邻居。
 
 ### 边列表（Edge list）
-
-<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -186,8 +176,6 @@ classDef noback fill:#fff0, stroke:#fff0;
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
 
-</div>
-
 ### 邻接矩阵（Adjacency matrix）
 
 - 邻接矩阵是一个 2D 正方形矩阵；
@@ -196,8 +184,6 @@ classDef noback fill:#fff0, stroke:#fff0;
 - 权图则为权值，无权边可以为 -1。
 
 一般表示为：$A=N\times N$
-
-<div align="center" markdown="1">
 
 ```mermaid
 flowchart TB
@@ -244,8 +230,6 @@ classDef noback fill:#fff0, stroke:#fff0;
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>-1</td><td>12</td><td>10</td><td>-1</td><td>-1</td><td>-1</td></tr><tr><td>B</td><td>-1</td><td>-1</td><td>-1</td><td>8</td><td>-1</td><td>-1</td></tr><tr><td>C</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>15</td><td>1</td></tr><tr><td>D</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>7</td></tr><tr><td>E</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>12</td></tr><tr><td>F</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td></tr></tbody></table>{:/} | {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>F</td><td>T</td><td>T</td><td>F</td><td>F</td><td>F</td></tr><tr><td>B</td><td>T</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td></tr><tr><td>C</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td><td>T</td></tr><tr><td>D</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>E</td><td>T</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td></tr></tbody></table>{:/} |
 
-</div>
-
 > 严格意义上无向图的邻接矩阵应该是对称矩阵，但是有些时候为了方便存储或是其他原因，可能会表示为三角矩阵。
 
 ```mermaid
@@ -291,7 +275,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 
 | 无向 & 无权图（左图）                                        | 有向 & 有权图（右图）                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & F & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & F & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & 34 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & 23 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{matrix}$ |
+| {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>F</td><td>T</td><td>T</td><td>F</td><td>F</td><td>F</td></tr><tr><td>B</td><td>F</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td></tr><tr><td>C</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td><td>T</td></tr><tr><td>D</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>E</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>T</td></tr><tr><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td></tr></tbody></table>{:/} | {::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>-1</td><td>12</td><td>10</td><td>-1</td><td>-1</td><td>-1</td></tr><tr><td>B</td><td>34</td><td>-1</td><td>-1</td><td>8</td><td>-1</td><td>-1</td></tr><tr><td>C</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>15</td><td>1</td></tr><tr><td>D</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>7</td></tr><tr><td>E</td><td>23</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>12</td></tr><tr><td>F</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td></tr></tbody></table>{:/} |
 
 ### 关联矩阵（Incidence matrix）
 
@@ -336,14 +320,12 @@ classDef noback fill:#fff0, stroke:#fff0;
 
 | 无向图（左图）                                               | 有向图（右图）                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{matrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & 1 & 1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & 1 & 0\\\\ \rm C & 0 & 1 & 1 & 0 & 1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & 1\\\\ \rm E & 0 & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & -1 & -1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & -1 & 0\\\\ \rm C & 0 & 1 & -1 & 0 & -1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & -1\\\\ \rm E & 0 & 0 & 1 & -1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{matrix}$ |
+| {::nomarkdown}<table><thead><tr><th></th><th>e1</th><th>e2</th><th>e3</th><th>e4</th><th>e5</th><th>e6</th><th>e7</th></tr></thead><tbody><tr><td>A</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>C</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>D</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>E</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>F</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr></tbody></table>{:/} | {::nomarkdown}<table><thead><tr><th></th><th>e1</th><th>e2</th><th>e3</th><th>e4</th><th>e5</th><th>e6</th><th>e7</th></tr></thead><tbody><tr><td>A</td><td>-1</td><td>-1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>-1</td><td>0</td></tr><tr><td>C</td><td>0</td><td>1</td><td>-1</td><td>0</td><td>-1</td><td>0</td><td>0</td></tr><tr><td>D</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>-1</td></tr><tr><td>E</td><td>0</td><td>0</td><td>1</td><td>-1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>F</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr></tbody></table>{:/} |
 | 如果节点和边相连，则值为 1，否则为 0。节点由行表示，而边相反。 | 如果节点和边相连，根据边的方向，值取 -1/1，不相连则取 0。节点由行表示，而边相反。 |
 
 ### 度矩阵（Degree Matrix）
 
 如果不区分入度和出度的话，任意有向图的度矩阵和将它的边的方向删掉得到的无向图的度矩阵是一样的。
-
-<div align="center" markdown="1">
 
 ```mermaid
 flowchart LR
@@ -364,9 +346,7 @@ B---B
 F---F
 ```
 
-$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\\\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\\\ \end{matrix}$
-
-</div>
+{::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>C</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td></tr><tr><td>D</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr><tr><td>E</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td></tr><tr><td>F</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td></tr></tbody></table>{:/}
 
 > 度矩阵是一个对角矩阵。
 
@@ -376,8 +356,6 @@ $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 
 - $L=Degree Matrix - Adjacency Matrix$
 - $L=\{D-A\}$
 
-<div align="center" markdown="1">
-
 ```mermaid
 flowchart LR
 A(("A"))
@@ -397,31 +375,17 @@ B---B
 F---F
 ```
 
-</div>
-
 $D(Degree\ Matrix):$
 
-<div align="center" markdown="1">
-
-$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\\\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\\\ \end{matrix}$
-
-</div>
+{::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>C</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td></tr><tr><td>D</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr><tr><td>E</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td></tr><tr><td>F</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td></tr></tbody></table>{:/}
 
 $A(Adjacency\ Matrix):$ (自连这里算作两条边)
 
-<div align="center" markdown="1">
-
-$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm B & 1 & 2 & 0 & 1 & 0 & 0 \\\\ \rm C & 1 & 0 & 0 & 0 & 1 & 1\\\\ \rm D & 0 & 1 & 0 & 0 & 0 & 1\\\\ \rm E & 0 & 0 & 1 & 0 & 0 & 1\\\\ \rm F & 0 & 0 & 1 & 1 & 1 & 2\\\\ \end{matrix}$
-
-</div>
+{::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>1</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>C</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>D</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>E</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>F</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td></tr></tbody></table>{:/}
 
 $L=\{D-A\}:$
 
-<div align="center" markdown="1">
-
-$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & -1 & -1 & 0 & 0 & 0\\\\ \rm B & -1 & 2 & 0 & -1 & 0 & 0 \\\\ \rm C & -1 & 0 & 3 & 0 & -1 & -1\\\\ \rm D & 0 & -1 & 0 & 2 & 0 & -1\\\\ \rm E & 0 & 0 & -1 & 0 & 2 & -1\\\\ \rm F & 0 & 0 & -1 & -1 & -1 & 3\\\\ \end{matrix}$
-
-</div>
+{::nomarkdown}<table><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>A</td><td>2</td><td>-1</td><td>-1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>-1</td><td>2</td><td>0</td><td>-1</td><td>0</td><td>0</td></tr><tr><td>C</td><td>-1</td><td>0</td><td>3</td><td>0</td><td>-1</td><td>-1</td></tr><tr><td>D</td><td>0</td><td>-1</td><td>0</td><td>2</td><td>0</td><td>-1</td></tr><tr><td>E</td><td>0</td><td>0</td><td>-1</td><td>0</td><td>2</td><td>-1</td></tr><tr><td>F</td><td>0</td><td>0</td><td>-1</td><td>-1</td><td>-1</td><td>3</td></tr></tbody></table>{:/}
 
 ## 图神经网络（Graph Neural Network or GNN）
 
