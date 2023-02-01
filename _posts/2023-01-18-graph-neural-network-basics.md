@@ -179,15 +179,11 @@ classDef noback fill:#fff0, stroke:#fff0;
 ### 邻接矩阵（Adjacency matrix）
 
 - 邻接矩阵是一个 2D 正方形矩阵；
-
 - 每一个节点都占据两个维度的一个刻度；
-
 - 无权图则矩阵值一般为 True/False 或 1/0；
-
 - 权图则为权值，无权边可以为 -1。
 
-
-- 一般表示为：$A=N\times N$
+一般表示为：$A=N\times N$
 
 ```mermaid
 flowchart TB
@@ -232,7 +228,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 
 | 无向 & 有权图（左图）                                        | 有向 & 无权图（右图）                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & -1 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & -1 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & T & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & T & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{pmatrix}$ |
+| $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & -1 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & -1 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & T & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & T & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{matrix}$ |
 
 > 严格意义上无向图的邻接矩阵应该是对称矩阵，但是有些时候为了方便存储或是其他原因，可能会表示为三角矩阵。
 
@@ -277,15 +273,54 @@ class s1,s2 noback;
 classDef noback fill:#fff0, stroke:#fff0;
 ```
 
-| 无向 & 无权图                                                | 有向 & 有权图                                                |
+| 无向 & 无权图（左图）                                        | 有向 & 有权图（右图）                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & F & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & F & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & 34 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & 23 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{pmatrix}$ |
+| $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & F & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & F & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & 34 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & 23 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{matrix}$ |
 
 ### 关联矩阵（Incidence matrix）
 
-| 无向图                                                       | 有向图                                                       |
+```mermaid
+flowchart TB
+
+subgraph s2 [" "]
+A2(("A"))
+B2(("B"))
+C2(("C"))
+D2(("D"))
+E2(("E"))
+F2(("F"))
+A2-->B2
+A2-->C2
+C2-->E2
+C2-->F2
+D2-->F2
+B2-->D2
+E2-->F2
+end
+
+subgraph s1 [" "]
+A1(("A"))
+B1(("B"))
+C1(("C"))
+D1(("D"))
+E1(("E"))
+F1(("F"))
+A1---B1
+A1---C1
+C1---E1
+C1---F1
+D1---F1
+B1---D1
+E1---F1
+end
+
+class s1,s2 noback;
+classDef noback fill:#fff0, stroke:#fff0;
+```
+
+| 无向图（左图）                                               | 有向图（右图）                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & 1 & 1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & 1 & 0\\\\ \rm C & 0 & 1 & 1 & 0 & 1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & 1\\\\ \rm E & 0 & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{pmatrix}$ | $\begin{pmatrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & -1 & -1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & -1 & 0\\\\ \rm C & 0 & 1 & -1 & 0 & -1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & -1\\\\ \rm E & 0 & 0 & 1 & -1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{pmatrix}$ |
+| $\begin{matrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & 1 & 1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & 1 & 0\\\\ \rm C & 0 & 1 & 1 & 0 & 1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & 1\\\\ \rm E & 0 & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm e1 & \rm e2 & \rm e3 & \rm e4 & \rm e5 & \rm e6 & \rm e7 \\\\ \rm A & -1 & -1 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 1 & 0 & 0 & 0 & 0 & -1 & 0\\\\ \rm C & 0 & 1 & -1 & 0 & -1 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 0 & 0 & 1 & -1\\\\ \rm E & 0 & 0 & 1 & -1 & 0 & 0 & 0\\\\ \rm F & 0 & 0 & 0 & 1 & 1 & 0 & 1\\\\ \end{matrix}$ |
 | 如果节点和边相连，则值为 1，否则为 0。节点由行表示，而边相反。 | 如果节点和边相连，根据边的方向，值取 -1/1，不相连则取 0。节点由行表示，而边相反。 |
 
 ### 度矩阵（Degree Matrix）
@@ -313,9 +348,9 @@ B---B
 F---F
 ```
 
-</div>
+$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\\\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\\\ \end{matrix}$
 
-$$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\ \end{pmatrix}$$
+</div>
 
 > 度矩阵是一个对角矩阵。
 
@@ -350,15 +385,27 @@ F---F
 
 $D(Degree\ Matrix):$
 
-$$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\ \end{pmatrix}$$
+<div align="center" markdown="1">
+
+$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & 0 & 0 & 0 & 0 & 0\\\\ \rm B & 0 & 4 & 0 & 0 & 0 & 0 \\\\ \rm C & 0 & 0 & 3 & 0 & 0 & 0\\\\ \rm D & 0 & 0 & 0 & 2 & 0 & 0\\\\ \rm E & 0 & 0 & 0 & 0 & 2 & 0\\\\ \rm F & 0 & 0 & 0 & 0 & 0 & 5\\\\ \end{matrix}$
+
+</div>
 
 $A(Adjacency\ Matrix):$ (自连这里算作两条边)
 
-$$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 0 & 1 & 1 & 0 & 0 & 0\\ \rm B & 1 & 2 & 0 & 1 & 0 & 0 \\ \rm C & 1 & 0 & 0 & 0 & 1 & 1\\ \rm D & 0 & 1 & 0 & 0 & 0 & 1\\ \rm E & 0 & 0 & 1 & 0 & 0 & 1\\ \rm F & 0 & 0 & 1 & 1 & 1 & 2\\ \end{pmatrix}$$
+<div align="center" markdown="1">
+
+$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 0 & 1 & 1 & 0 & 0 & 0\\\\ \rm B & 1 & 2 & 0 & 1 & 0 & 0 \\\\ \rm C & 1 & 0 & 0 & 0 & 1 & 1\\\\ \rm D & 0 & 1 & 0 & 0 & 0 & 1\\\\ \rm E & 0 & 0 & 1 & 0 & 0 & 1\\\\ \rm F & 0 & 0 & 1 & 1 & 1 & 2\\\\ \end{matrix}$
+
+</div>
 
 $L=\{D-A\}:$
 
-$$\begin{pmatrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\ \rm A & 2 & -1 & -1 & 0 & 0 & 0\\ \rm B & -1 & 2 & 0 & -1 & 0 & 0 \\ \rm C & -1 & 0 & 3 & 0 & -1 & -1\\ \rm D & 0 & -1 & 0 & 2 & 0 & -1\\ \rm E & 0 & 0 & -1 & 0 & 2 & -1\\ \rm F & 0 & 0 & -1 & -1 & -1 & 3\\ \end{pmatrix}$$
+<div align="center" markdown="1">
+
+$\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & 2 & -1 & -1 & 0 & 0 & 0\\\\ \rm B & -1 & 2 & 0 & -1 & 0 & 0 \\\\ \rm C & -1 & 0 & 3 & 0 & -1 & -1\\\\ \rm D & 0 & -1 & 0 & 2 & 0 & -1\\\\ \rm E & 0 & 0 & -1 & 0 & 2 & -1\\\\ \rm F & 0 & 0 & -1 & -1 & -1 & 3\\\\ \end{matrix}$
+
+</div>
 
 ## 图神经网络（Graph Neural Network or GNN）
 
