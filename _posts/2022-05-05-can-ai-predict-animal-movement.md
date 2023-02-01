@@ -3,7 +3,8 @@ title: 论文笔记：Can AI predicts animal movements?
 tags: Ecosphere 论文 强化学习 笔记
 ---
 
-> 原文：Can AI predict animal movements? filling gaps in animal trajectories using inverse reinforcement learning
+> **「原文」**Can AI predict animal movements? filling gaps in animal trajectories using inverse reinforcement learning<br/>
+> **「作者」**Tsubasa Hirakawa, Takayoshi Yamashita, Toru Tamaki, Hironobu Fujiyoshi, Yuta Umezu, Ichiro Takeuchi, Sakiko Matsumoto, Ken Yoda
 
 ## 摘要
 

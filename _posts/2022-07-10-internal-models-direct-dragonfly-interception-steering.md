@@ -3,7 +3,8 @@ title: 论文笔记：Internal models direct dragonfly interception steering
 tags: Nature 论文 生物学 笔记
 ---
 
-> 原文：Internal models direct dragonfly interception steering
+> **「原文」**Internal models direct dragonfly interception steering<br/>
+> **「作者」**Matteo Mischiati, Huai-Ti Lin, Paul Herold, Elliot Imler, Robert Olberg & Anthony Leonardo
 
 ## 摘要
 
