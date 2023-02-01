@@ -8,7 +8,7 @@ tags: 图神经网络 GNN 机器学习 记录
 
 <!--more-->
 
-<center>
+<center markdown="1">
 
 ```mermaid
 flowchart TB
@@ -86,7 +86,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 
 ## 图的数学表示
 
-<center>
+<center markdown="1">
 
 ```mermaid
 flowchart TB
@@ -137,7 +137,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 
 ### 边列表（Edge list）
 
-<center>
+<center markdown="1">
 
 ```mermaid
 flowchart TB
@@ -186,7 +186,7 @@ classDef noback fill:#fff0, stroke:#fff0;
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
 
-<\center>
+</center>
 
 ### 邻接矩阵（Adjacency matrix）
 
@@ -196,6 +196,8 @@ classDef noback fill:#fff0, stroke:#fff0;
 - 权图则为权值，无权边可以为 -1。
 
 一般表示为：$A=N\times N$
+
+<center markdown="1">
 
 ```mermaid
 flowchart TB
@@ -241,6 +243,8 @@ classDef noback fill:#fff0, stroke:#fff0;
 | 无向 & 有权图（左图）                                        | 有向 & 无权图（右图）                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & -1 & 12 & 10 & -1 & -1 & -1\\\\ \rm B & -1 & -1 & -1 & 8 & -1 & -1 \\\\ \rm C & -1 & -1 & -1 & -1 & 15 & 1\\\\ \rm D & -1 & -1 & -1 & -1 & -1 & 7\\\\ \rm E & -1 & -1 & -1 & -1 & -1 & 12\\\\ \rm F & -1 & -1 & -1 & -1 & -1 & -1\\\\ \end{matrix}$ | $\begin{matrix} \  & \rm A & \rm B & \rm C & \rm D & \rm E & \rm F \\\\ \rm A & F & T & T & F & F & F\\\\ \rm B & T & F & F & T & F & F \\\\ \rm C & F & F & F & F & T & T\\\\ \rm D & F & F & F & F & F & T\\\\ \rm E & T & F & F & F & F & T\\\\ \rm F & F & F & F & F & F & F\\\\ \end{matrix}$ |
+
+</center>
 
 > 严格意义上无向图的邻接矩阵应该是对称矩阵，但是有些时候为了方便存储或是其他原因，可能会表示为三角矩阵。
 
