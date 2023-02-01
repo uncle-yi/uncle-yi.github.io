@@ -8,6 +8,8 @@ tags: 图神经网络 GNN 机器学习 记录
 
 <!--more-->
 
+<center>
+
 ```mermaid
 flowchart TB
 
@@ -78,9 +80,13 @@ class s1,s2 noback;
 classDef noback fill:#fff0, stroke:#fff0;
 ```
 
+</center>
+
 > 一个全连接图意味着如果是无向图则图中所有的节点之间都有一个边连接。如果是有向图，则总是存在一个边，这个边的两头为任意节点。
 
 ## 图的数学表示
+
+<center>
 
 ```mermaid
 flowchart TB
@@ -125,9 +131,13 @@ classDef noback fill:#fff0, stroke:#fff0;
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>    </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B),(A,C),(B,D),(C,E),(C,F),(D,F),(E,F)}</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>节点的集合</th>    <th>边的集合</th>  </tr>  <tr>    <td>V={A,B,C,D,E,F}</td>  <td>E={(A,B,12), (A,C,10), (B,D,8), (C,E,15), (C,F,1), (D,F,7), (E,F,12)}</td>  </tr>  </table>{:/} |
 
+</center>
+
 邻居（Neighbors）：有边相连的两个节点互为邻居。例：B 和 C 是 A 的所有邻居。
 
 ### 边列表（Edge list）
+
+<center>
 
 ```mermaid
 flowchart TB
@@ -175,6 +185,8 @@ classDef noback fill:#fff0, stroke:#fff0;
 | 有向 & 无权图<br>（左图，Directed & Un-weighted）            | 有向 & 有权图<br/>（右图，Directed & Weighed）               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  </tr>  </table>{:/} | {::nomarkdown}<table>  <tr>    <th>Node1</th>    <th>Node2</th>    <th>Weight</th>    </tr>  <tr>  <td>A</td>  <td>B</td>  <td>12</td>  </tr>  <tr>  <td>A</td>  <td>C</td>  <td>10</td>  </tr>  <tr>  <td>B</td>  <td>D</td>  <td>8</td>  </tr>  <tr>  <td>C</td>  <td>E</td>  <td>15</td>  </tr>  <tr>  <td>C</td>  <td>F</td>  <td>1</td>  </tr>  <tr>  <td>D</td>  <td>F</td>  <td>7</td>  </tr>  <tr>  <td>E</td>  <td>F</td>  <td>12</td>  </tr>  <tr>  <td>E</td>  <td>A</td>  <td>23</td>  </tr>  <tr>  <td>B</td>  <td>A</td>  <td>34</td>  </tr>  </table>{:/} |
+
+<\center>
 
 ### 邻接矩阵（Adjacency matrix）
 
