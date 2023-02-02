@@ -375,7 +375,7 @@ B---B
 F---F
 ```
 
-| $D\ {\rm(Degree Matrix)}$                                    | $A\ {\rm(Adjacency Matrix)}$                                 |
+> | $D\ {\rm(Degree Matrix)}$                                    | $A\ {\rm(Adjacency Matrix)}$                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | {::nomarkdown}<table><tdead><tr><td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr></tdead><tbody><tr><td>A</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>C</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td></tr><tr><td>D</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr><tr><td>E</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td></tr><tr><td>F</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td></tr></tbody></table>{:/} | {::nomarkdown}<table><tdead><tr><td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr></tdead><tbody><tr><td>A</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>1</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>C</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>D</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>E</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>F</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td></tr></tbody></table>{:/} |
 
