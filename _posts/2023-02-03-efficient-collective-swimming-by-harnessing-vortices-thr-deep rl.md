@@ -54,3 +54,13 @@ $IS_\eta$ 的奖励函数就是游行效率，而 $IS_d$ 的奖励函数是 $R_d
 >
 > 图 3（原文图 2）学习游泳策略的结果
 
+## Intercepting Vortices for Efficient Swimming
+
+和对照组的两个 $SS$ 作比较，$IS_\eta$ 的游行效率要大大优于 $SS_\eta$，而它们之间的差距只有一个稳定的领导鱼造成的稳定涡流。而 $IS_\eta$ 和 $SS_\eta$ 又都优于 $IS_d$ 和 $SS_d$。
+
+后续内容就是效率的实际分析了，涉及过多流体力学的内容，请有需求的读者自行阅读原文。
+
+## 引用
+
+1. [Efficient collective swimming by harnessing vortices through deep reinforcement learning - PNAS](https://www.pnas.org/doi/suppl/10.1073/pnas.1800923115)
+
