@@ -8,7 +8,7 @@ tags:
 - 强化学习
 ---
 
-> **「原文」**Efficient collective swimming by harnessing vortices through deep reinforcement learning
+> **「原文」**Efficient collective swimming by harnessing vortices through deep reinforcement learning<br/>
 > **「作者」**Siddhartha Verma, Guido Novati, and Petros Koumoutsakos
 >
 > 注：该文章有较多的流体力学内容，这些部分对我的研究暂时没有太大用处，所以下文会省略大量内容，注意审阅。
@@ -19,11 +19,7 @@ tags:
 
 <!--more-->
 
-> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-0c3c6310fa.gif){:height="300px" .border}
->
-> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-73bf296214.gif){:height="300px" .border}
->
-> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-49ec5fe688.gif){:height="300px" .border}
+> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-0c3c6310fa.gif){:height="100px" .border}![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-73bf296214.gif){:height="100px" .border}![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-49ec5fe688.gif){:height="100px" .border}
 >
 > 图 1（原文 S. Movie 1, 2, 3）：三种不同情况的仿真示例，透明流状物是仿真可视化的涡旋（S. 指 Supplementary，下文不再做注解）
 
@@ -48,7 +44,7 @@ tags:
 
 ### Efficient Autonomous Swimmers
 
-$IS_\eta$ 的奖励函数就是游行效率，而 $IS_d$ 的奖励函数是 $R_d = 1 − |\Delta y|/L$ （$L$ 是鱼的长度）。后者收敛后，符合预期的，它和领导鱼的纵向偏差 $\Delta x$ 维持在了 $2.2L$ 左右。令人惊讶的是，$IS_\eta$ 的结果也是分别在 $\Delta x=1.5L$ 以及 $\Delta x=2.2L$ 的距离上保持稳定（图 3E），即使它不会因为相对位置而获得任何的奖励。这两个点也和实际上的全局最优的两个峰值十分接近。两个距离相差的 $0.7L$ 也和领导鱼造成的涡旋之间的距离吻合。从训练数据来看，$IS_\eta$ 在游行过程中的摆动幅度也比 $IS_d$ 明显要小（图 2F）。这也很好理解，因为后者的奖励函数对游行效率不敏感，事实证明它的能量损失也严重大于前者。这说明盲目的无策略的跟随领导鱼反而会降低游行的效率。
+$IS_\eta$ 的奖励函数就是游行效率，而 $IS_d$ 的奖励函数是 $R_d = 1 − \lvert\Delta y\rvert/L$ （$L$ 是鱼的长度）。后者收敛后，符合预期的，它和领导鱼的纵向偏差 $\Delta x$ 维持在了 $2.2L$ 左右。令人惊讶的是，$IS_\eta$ 的结果也是分别在 $\Delta x=1.5L$ 以及 $\Delta x=2.2L$ 的距离上保持稳定（图 3E），即使它不会因为相对位置而获得任何的奖励。这两个点也和实际上的全局最优的两个峰值十分接近。两个距离相差的 $0.7L$ 也和领导鱼造成的涡旋之间的距离吻合。从训练数据来看，$IS_\eta$ 在游行过程中的摆动幅度也比 $IS_d$ 明显要小（图 2F）。这也很好理解，因为后者的奖励函数对游行效率不敏感，事实证明它的能量损失也严重大于前者。这说明盲目的无策略的跟随领导鱼反而会降低游行的效率。
 
 > ![]({{ site.url }}\assets\images\2023-02-03\Snipaste_2023-02-03_15-56-18.png){:height="300px" .border}
 >
