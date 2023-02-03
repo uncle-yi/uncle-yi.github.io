@@ -19,7 +19,7 @@ tags:
 
 <!--more-->
 
-> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-0c3c6310fa.gif){:height="100px" .border}![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-73bf296214.gif){:height="100px" .border}![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-49ec5fe688.gif){:height="100px" .border}
+> ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-0c3c6310fa.gif){:height="120px" .border} ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-73bf296214.gif){:height="120px" .border} ![]({{ site.url }}\assets\images\2023-02-03\ezgif-5-49ec5fe688.gif){:height="120px" .border}
 >
 > 图 1（原文 S. Movie 1, 2, 3）：三种不同情况的仿真示例，透明流状物是仿真可视化的涡旋（S. 指 Supplementary，下文不再做注解）
 
